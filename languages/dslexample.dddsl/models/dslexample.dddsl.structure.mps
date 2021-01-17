@@ -14,7 +14,6 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -213,7 +212,6 @@
     <property role="EcuMT" value="2424217668458322383" />
     <property role="TrG5h" value="Entity" />
     <property role="3GE5qa" value="type" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="PrWs8" id="26$zi0qFLBg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -254,7 +252,6 @@
     <property role="EcuMT" value="2424217668458322396" />
     <property role="3GE5qa" value="type" />
     <property role="TrG5h" value="Value" />
-    <property role="R5$K7" value="true" />
     <property role="R4oN_" value="A &quot;value object&quot; in DDD..." />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyi" id="26$zi0qFLBx" role="1TKVEl">
@@ -266,6 +263,9 @@
       <property role="IQ2nx" value="2424217668458322403" />
       <property role="TrG5h" value="unity" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="26$zi0qFRcr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
