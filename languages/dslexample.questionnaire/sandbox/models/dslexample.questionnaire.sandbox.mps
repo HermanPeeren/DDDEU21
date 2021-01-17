@@ -93,7 +93,7 @@
       </node>
     </node>
     <node concept="WcUho" id="3mLOxDjzbA0" role="WcUhm">
-      <property role="WcUht" value="Can you assign the foillowing kinds of people for a DSL project?" />
+      <property role="WcUht" value="Can you assign the following kinds of people for a DSL project?" />
       <property role="WcUh0" value="Expertise availability is essential when using existing software to develop a DSL" />
       <property role="WcUhv" value="40" />
       <property role="TrG5h" value="expertise_availability" />
