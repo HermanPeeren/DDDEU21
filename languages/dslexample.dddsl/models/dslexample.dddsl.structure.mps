@@ -62,14 +62,14 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="value_types" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFLBs" resolve="Value" />
+      <ref role="20lvS9" node="26$zi0qFLBs" resolve="value" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMR2" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327490" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="entities" />
+      <property role="20kJfa" value="write_side_state" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFLBf" resolve="Entity" />
+      <ref role="20lvS9" node="26$zi0qFLBf" resolve="entity" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMR6" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327494" />
@@ -95,16 +95,16 @@
     <node concept="1TJgyj" id="2rrzOoAq6Kk" role="1TKVEi">
       <property role="IQ2ns" value="2799989124795755540" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="actions" />
+      <property role="20kJfa" value="processess" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2rrzOoAq8Pm" resolve="action" />
+      <ref role="20lvS9" node="2rrzOoAq8Pm" resolve="process" />
     </node>
   </node>
   <node concept="1TIwiD" id="2rrzOoAq8Pm">
-    <property role="TrG5h" value="action" />
+    <property role="TrG5h" value="process" />
     <property role="EcuMT" value="2799989124795764054" />
-    <property role="3GE5qa" value="action" />
-    <property role="R4oN_" value="An action defines which event is output when a command is input given the state. Conditions given the state are a.k.a. &quot;invariants&quot; of an &quot;aggregate&quot;." />
+    <property role="3GE5qa" value="process" />
+    <property role="R4oN_" value="A process defines which event is output when a command is input given the state. Conditions given the state are a.k.a. &quot;invariants&quot; of an &quot;aggregate&quot;." />
     <property role="34LRSv" value="action" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="26$zi0qFHie" role="PzmwI">
@@ -145,7 +145,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="stream" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="26$zi0qFLBf" resolve="Entity" />
+      <ref role="20lvS9" node="26$zi0qFLBf" resolve="entity" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMQW" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327484" />
@@ -169,7 +169,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="26$zi0qFLBf" resolve="Entity" />
+      <ref role="20lvS9" node="26$zi0qFLBf" resolve="entity" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMQN" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327475" />
@@ -181,28 +181,28 @@
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAO">
     <property role="EcuMT" value="7476658783287298484" />
-    <property role="3GE5qa" value="action" />
+    <property role="3GE5qa" value="process" />
     <property role="TrG5h" value="given" />
     <property role="34LRSv" value="given" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAP">
     <property role="EcuMT" value="7476658783287298485" />
-    <property role="3GE5qa" value="action" />
+    <property role="3GE5qa" value="process" />
     <property role="TrG5h" value="when" />
     <property role="34LRSv" value="when" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAQ">
     <property role="EcuMT" value="7476658783287298486" />
-    <property role="3GE5qa" value="action" />
+    <property role="3GE5qa" value="process" />
     <property role="TrG5h" value="then" />
     <property role="34LRSv" value="then" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="26$zi0qFEXk">
     <property role="EcuMT" value="2424217668458295124" />
-    <property role="3GE5qa" value="action" />
+    <property role="3GE5qa" value="process" />
     <property role="TrG5h" value="condition" />
     <property role="34LRSv" value="condition" />
     <property role="R4oN_" value="A boolean expression, used in a Given-constraint" />
@@ -210,9 +210,11 @@
   </node>
   <node concept="1TIwiD" id="26$zi0qFLBf">
     <property role="EcuMT" value="2424217668458322383" />
-    <property role="TrG5h" value="Entity" />
-    <property role="3GE5qa" value="type" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <property role="TrG5h" value="entity" />
+    <property role="3GE5qa" value="write-side state" />
+    <property role="R4oN_" value="result of a write-side projection, reconstituted from a stream of events." />
+    <property role="34LRSv" value="entity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="26$zi0qFLBg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -227,31 +229,29 @@
   <node concept="1TIwiD" id="26$zi0qFLBk">
     <property role="TrG5h" value="attribute" />
     <property role="EcuMT" value="2424217668458322388" />
-    <property role="3GE5qa" value="type" />
+    <property role="3GE5qa" value="write-side state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="26$zi0qFLBl" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="26$zi0qFLBn" role="1TKVEl">
-      <property role="IQ2nx" value="2424217668458322391" />
-      <property role="TrG5h" value="Type" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="6h4SlfRNENu" role="1TKVEi">
+      <property role="IQ2ns" value="7225147452965170398" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
     </node>
   </node>
   <node concept="1TIwiD" id="26$zi0qFLBp">
     <property role="EcuMT" value="2424217668458322393" />
-    <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="AttributeType" />
-    <property role="R4oN_" value="A type of an attribute" />
+    <property role="3GE5qa" value="write-side state" />
+    <property role="TrG5h" value="attributeType" />
+    <property role="R4oN_" value="A custom type of an attribute; NOT USED NOW" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
-    <node concept="PrWs8" id="26$zi0qFLBq" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
   </node>
   <node concept="1TIwiD" id="26$zi0qFLBs">
     <property role="EcuMT" value="2424217668458322396" />
-    <property role="3GE5qa" value="type" />
-    <property role="TrG5h" value="Value" />
+    <property role="3GE5qa" value="write-side state" />
+    <property role="TrG5h" value="value" />
     <property role="R4oN_" value="A &quot;value object&quot; in DDD..." />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyi" id="26$zi0qFLBx" role="1TKVEl">
