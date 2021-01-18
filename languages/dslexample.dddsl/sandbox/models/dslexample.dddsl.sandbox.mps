@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="tpdt" ref="r:00000000-0000-4000-0000-011c895902dd(jetbrains.mps.baseLanguage.blTypes.structure)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="126907fc-4c21-412b-bec8-5879aa8d911c" name="dslexample.dddsl">
@@ -33,12 +32,19 @@
       <concept id="7476658783287298484" name="dslexample.dddsl.structure.given" flags="ng" index="23pEgS" />
       <concept id="7476658783287298485" name="dslexample.dddsl.structure.when" flags="ng" index="23pEgT" />
       <concept id="7476658783287298486" name="dslexample.dddsl.structure.then" flags="ng" index="23pEgU" />
+      <concept id="5550713478314280052" name="dslexample.dddsl.structure.DDDStringType" flags="ng" index="2DVlKb" />
+      <concept id="5550713478314352066" name="dslexample.dddsl.structure.DDDEntityType" flags="ng" index="2DV$mX">
+        <reference id="5550713478314352067" name="entity" index="2DV$mW" />
+      </concept>
+      <concept id="5550713478314371179" name="dslexample.dddsl.structure.DDDListType" flags="ng" index="2DVF0k">
+        <child id="5550713478314371180" name="baseType" index="2DVF0j" />
+      </concept>
       <concept id="2424217668458295124" name="dslexample.dddsl.structure.condition" flags="ng" index="V2y9O" />
       <concept id="2424217668458322383" name="dslexample.dddsl.structure.entity" flags="ng" index="V2TjJ">
         <child id="2424217668458322386" name="attributes" index="V2TjM" />
       </concept>
       <concept id="2424217668458322388" name="dslexample.dddsl.structure.attribute" flags="ng" index="V2TjO">
-        <reference id="7225147452965170398" name="type" index="2jy$Qd" />
+        <child id="5550713478314280057" name="type" index="2DVlK6" />
       </concept>
       <concept id="2424217668458322396" name="dslexample.dddsl.structure.value" flags="ig" index="V2TjW" />
     </language>
@@ -55,17 +61,24 @@
       <property role="TrG5h" value="Balloon" />
       <node concept="V2TjO" id="26$zi0qG7v3" role="V2TjM">
         <property role="TrG5h" value="call_sign" />
-        <ref role="2jy$Qd" to="wyt6:6h4SlfRNa29" />
+        <node concept="2DVlKb" id="4O867Z$ToHA" role="2DVlK6" />
       </node>
       <node concept="V2TjO" id="6h4SlfRNVEF" role="V2TjM">
         <property role="TrG5h" value="capacity" />
-        <ref role="2jy$Qd" to="wyt6:6h4SlfRNa5x" />
+        <node concept="2DVF0k" id="4O867Z$TJX6" role="2DVlK6">
+          <node concept="2DVF0k" id="4O867Z$TJXf" role="2DVF0j">
+            <node concept="2DVlKb" id="4O867Z$TJXl" role="2DVF0j" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="V2TjJ" id="6h4SlfROlTu" role="V2U3y">
       <property role="TrG5h" value="Flight" />
       <node concept="V2TjO" id="6h4SlfROxpt" role="V2TjM">
         <property role="TrG5h" value="id" />
+        <node concept="2DV$mX" id="4O867Z$TSa1" role="2DVlK6">
+          <ref role="2DV$mW" node="26$zi0qG7v1" resolve="Balloon" />
+        </node>
       </node>
     </node>
     <node concept="V2TjJ" id="6h4SlfRNVEB" role="V2U3y">
@@ -127,6 +140,12 @@
       <node concept="23pEgT" id="6h4SlfROlSV" role="V2U3S" />
       <node concept="23pEgS" id="6h4SlfROlSW" role="V2U3U" />
       <node concept="23pEgU" id="6h4SlfROlSX" role="V2U3X" />
+    </node>
+  </node>
+  <node concept="0JyPW" id="4O867Z$TJXr">
+    <property role="TrG5h" value="AnotherModel" />
+    <node concept="V2TjJ" id="4O867Z$TOge" role="V2U3y">
+      <property role="TrG5h" value="EntityFoo" />
     </node>
   </node>
 </model>
