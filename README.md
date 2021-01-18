@@ -6,3 +6,5 @@
 3. Balloonproduct: a specific DSML for modelling different kinds of products for hot air ballooning
 
 Herman Peeren & Federico Tomassetti
+
+**Please download MPS 2020.3: https://www.jetbrains.com/mps/download**
