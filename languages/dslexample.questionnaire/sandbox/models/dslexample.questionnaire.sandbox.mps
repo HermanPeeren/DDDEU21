@@ -50,15 +50,15 @@
         <property role="TrG5h" value="expanding" />
       </node>
       <node concept="WcUh6" id="2IXLaNxht6U" role="WcUh4">
-        <property role="WcUhb" value="We don't know anything of the domain. Can we explore it by means of a DSL? " />
+        <property role="WcUhb" value="We don't know anything of the domain. Can we explore it by means of a DSL?" />
         <property role="WcUhe" value="Using a DSL might not be the best next step. Probably better first explore the domain and develop basic software for it." />
         <property role="WcUhd" value="-3" />
         <property role="TrG5h" value="greenfield" />
       </node>
     </node>
     <node concept="WcUho" id="4pWXKH0OUtG" role="WcUhm">
-      <property role="WcUht" value="Do you use Domain Driven Engineering?" />
-      <property role="WcUh0" value="DDE = formalising a model and generate software from it." />
+      <property role="WcUht" value="Do you use Model Driven Engineering?" />
+      <property role="WcUh0" value="DDE = formalising a model and generate software from in." />
       <property role="WcUhv" value="20" />
       <property role="TrG5h" value="dde" />
       <node concept="WcUh6" id="4pWXKH0OUtH" role="WcUh4">
