@@ -19,6 +19,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -42,17 +45,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -65,13 +60,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="26$zi0qFHib" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="26$zi0qFMQZ" role="1TKVEi">
-      <property role="IQ2ns" value="2424217668458327487" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="value_types" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFLBs" resolve="value" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMR2" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327490" />
@@ -113,8 +101,8 @@
     <property role="TrG5h" value="process" />
     <property role="EcuMT" value="2799989124795764054" />
     <property role="3GE5qa" value="process" />
-    <property role="R4oN_" value="A process defines which event is output when a command is input given the state. Conditions given the state are a.k.a. &quot;invariants&quot; of an &quot;aggregate&quot;." />
-    <property role="34LRSv" value="action" />
+    <property role="R4oN_" value="A process defines which event is output when a command is input, given the state. Conditions given the state are a.k.a. &quot;invariants&quot; of an &quot;aggregate&quot;." />
+    <property role="34LRSv" value="process" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="26$zi0qFHie" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -149,12 +137,19 @@
     <node concept="PrWs8" id="26$zi0qFHij" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="26$zi0qFMQU" role="1TKVEi">
-      <property role="IQ2ns" value="2424217668458327482" />
+    <node concept="1TJgyj" id="2O9pvn5YahW" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112759952508" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="process" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2O9pvn5XZAO" resolve="DDDProcessType" />
+    </node>
+    <node concept="1TJgyj" id="2O9pvn5Yai1" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112759952513" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="stream" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="26$zi0qFLBf" resolve="entity" />
+      <ref role="20lvS9" node="4O867Z$T_R2" resolve="DDDEntityType" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMQW" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327484" />
@@ -173,12 +168,12 @@
     <node concept="PrWs8" id="26$zi0qFHig" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="26$zi0qFMQP" role="1TKVEi">
-      <property role="IQ2ns" value="2424217668458327477" />
+    <node concept="1TJgyj" id="2O9pvn5XPHL" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112759868273" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="entity" />
+      <property role="20kJfa" value="process" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="26$zi0qFLBf" resolve="entity" />
+      <ref role="20lvS9" node="2O9pvn5XZAO" resolve="DDDProcessType" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMQN" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327475" />
@@ -201,6 +196,12 @@
     <property role="TrG5h" value="when" />
     <property role="34LRSv" value="when" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2O9pvn5ZqLL" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112760282225" />
+      <property role="20kJfa" value="command" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6v2roN$DcAG" resolve="command" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAQ">
     <property role="EcuMT" value="7476658783287298486" />
@@ -208,6 +209,13 @@
     <property role="TrG5h" value="then" />
     <property role="34LRSv" value="then" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2O9pvn5ZqMG" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112760282284" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="events" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2O9pvn5ZqN2" resolve="DDDEventType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="26$zi0qFEXk">
     <property role="EcuMT" value="2424217668458295124" />
@@ -216,6 +224,14 @@
     <property role="34LRSv" value="condition" />
     <property role="R4oN_" value="A boolean expression, used in a Given-constraint" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyi" id="3zVBo_qf0gp" role="1TKVEl">
+      <property role="IQ2nx" value="4106048698528302105" />
+      <property role="TrG5h" value="expr" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2O9pvn5ZqIy" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="26$zi0qFLBf">
     <property role="EcuMT" value="2424217668458322383" />
@@ -226,6 +242,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="26$zi0qFLBg" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="3nWjpmzCbjt" role="1TKVEi">
+      <property role="IQ2ns" value="3890069483231950045" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="id" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3nWjpmzCbjm" resolve="id" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFLBi" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458322386" />
@@ -238,73 +261,30 @@
   <node concept="1TIwiD" id="26$zi0qFLBk">
     <property role="TrG5h" value="attribute" />
     <property role="EcuMT" value="2424217668458322388" />
-    <property role="3GE5qa" value="write-side state" />
+    <property role="3GE5qa" value="" />
+    <property role="R4oN_" value="An attribute of an event-load, a command-load or an entity." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="4O867Z$TkhT" role="1TKVEi">
-      <property role="IQ2ns" value="5550713478314280057" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="type" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4O867Z$TkhL" resolve="DDDType" />
-    </node>
-    <node concept="PrWs8" id="26$zi0qFLBl" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1X3_iC" id="4O867Z$TkhP" role="lGtFl">
-      <property role="3V$3am" value="linkDeclaration" />
-      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
-      <node concept="1TJgyj" id="6h4SlfRNENu" role="8Wnug">
-        <property role="IQ2ns" value="7225147452965170398" />
-        <property role="20kJfa" value="old_type" />
-        <property role="20lbJX" value="fLJekj4/_1" />
-        <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
-      </node>
-    </node>
-  </node>
-  <node concept="1TIwiD" id="26$zi0qFLBp">
-    <property role="EcuMT" value="2424217668458322393" />
-    <property role="3GE5qa" value="write-side state" />
-    <property role="TrG5h" value="attributeType" />
-    <property role="R4oN_" value="A custom type of an attribute; NOT USED NOW" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
-  </node>
-  <node concept="1TIwiD" id="26$zi0qFLBs">
-    <property role="EcuMT" value="2424217668458322396" />
-    <property role="3GE5qa" value="write-side state" />
-    <property role="TrG5h" value="value" />
-    <property role="R4oN_" value="A &quot;value object&quot; in DDD..." />
-    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
-    <node concept="1TJgyi" id="26$zi0qFLBx" role="1TKVEl">
-      <property role="IQ2nx" value="2424217668458322401" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="26$zi0qFLBz" role="1TKVEl">
-      <property role="IQ2nx" value="2424217668458322403" />
-      <property role="TrG5h" value="unity" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="26$zi0qFRcr" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="PrWs8" id="2O9pvn5YZaH" role="PzmwI">
+      <ref role="PrY4T" node="2O9pvn5YZaA" resolve="IAttribute" />
     </node>
   </node>
   <node concept="1TIwiD" id="4O867Z$TkhL">
     <property role="EcuMT" value="5550713478314280049" />
     <property role="TrG5h" value="DDDType" />
-    <property role="3GE5qa" value="experimental_types" />
+    <property role="3GE5qa" value="DDDtypes" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4O867Z$TkhO">
     <property role="EcuMT" value="5550713478314280052" />
-    <property role="3GE5qa" value="experimental_types" />
+    <property role="3GE5qa" value="DDDtypes" />
     <property role="TrG5h" value="DDDStringType" />
     <property role="34LRSv" value="string" />
     <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
   </node>
   <node concept="1TIwiD" id="4O867Z$T_R2">
     <property role="EcuMT" value="5550713478314352066" />
-    <property role="3GE5qa" value="experimental_types" />
+    <property role="3GE5qa" value="DDDtypes" />
     <property role="TrG5h" value="DDDEntityType" />
     <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
     <node concept="1TJgyj" id="4O867Z$T_R3" role="1TKVEi">
@@ -316,7 +296,7 @@
   </node>
   <node concept="1TIwiD" id="4O867Z$TExF">
     <property role="EcuMT" value="5550713478314371179" />
-    <property role="3GE5qa" value="experimental_types" />
+    <property role="3GE5qa" value="DDDtypes" />
     <property role="TrG5h" value="DDDListType" />
     <property role="34LRSv" value="list" />
     <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
@@ -326,6 +306,69 @@
       <property role="20kJfa" value="baseType" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4O867Z$TkhL" resolve="DDDType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3MSCn7POTG1">
+    <property role="EcuMT" value="4375424548818098945" />
+    <property role="3GE5qa" value="DDDtypes" />
+    <property role="TrG5h" value="DDDIntegerType" />
+    <property role="34LRSv" value="integer" />
+    <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
+  </node>
+  <node concept="1TIwiD" id="3nWjpmzCbjm">
+    <property role="EcuMT" value="3890069483231950038" />
+    <property role="3GE5qa" value="write-side state" />
+    <property role="TrG5h" value="id" />
+    <property role="34LRSv" value="id" />
+    <property role="R4oN_" value="The identifier-attribute of an entity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2O9pvn5YZaK" role="PzmwI">
+      <ref role="PrY4T" node="2O9pvn5YZaA" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2O9pvn5XZAO">
+    <property role="EcuMT" value="3245237112759908788" />
+    <property role="3GE5qa" value="DDDtypes" />
+    <property role="TrG5h" value="DDDProcessType" />
+    <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
+    <node concept="1TJgyj" id="2O9pvn5XZAP" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112759908789" />
+      <property role="20kJfa" value="process" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2rrzOoAq8Pm" resolve="process" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2O9pvn5YZaA">
+    <property role="EcuMT" value="3245237112760169126" />
+    <property role="TrG5h" value="IAttribute" />
+    <node concept="PrWs8" id="2O9pvn5YZaB" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2O9pvn5YZaF" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112760169131" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="type" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4O867Z$TkhL" resolve="DDDType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2O9pvn5Z9iB">
+    <property role="EcuMT" value="3245237112760210599" />
+    <property role="3GE5qa" value="DDDtypes" />
+    <property role="TrG5h" value="DDDDateType" />
+    <property role="34LRSv" value="date" />
+    <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
+  </node>
+  <node concept="1TIwiD" id="2O9pvn5ZqN2">
+    <property role="EcuMT" value="3245237112760282306" />
+    <property role="3GE5qa" value="DDDtypes" />
+    <property role="TrG5h" value="DDDEventType" />
+    <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
+    <node concept="1TJgyj" id="2O9pvn5ZqN3" role="1TKVEi">
+      <property role="IQ2ns" value="3245237112760282307" />
+      <property role="20kJfa" value="event" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6v2roN$DcAF" resolve="event" />
     </node>
   </node>
 </model>

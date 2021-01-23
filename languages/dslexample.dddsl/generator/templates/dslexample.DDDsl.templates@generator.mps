@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:50adae1a-4c43-415c-a5bd-4e8be829bf6f(dslexample.dddsl.generator.templates@generator)">
+<model ref="r:50adae1a-4c43-415c-a5bd-4e8be829bf6f(dslexample.dddsl.templates@generator)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
