@@ -73,7 +73,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="conditions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFEXk" resolve="condition" />
+      <ref role="20lvS9" node="26$zi0qFEXk" resolve="Condition" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMRb" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327499" />
@@ -215,22 +215,6 @@
       <property role="20kJfa" value="events" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="2O9pvn5ZqN2" resolve="DDDEventType" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="26$zi0qFEXk">
-    <property role="EcuMT" value="2424217668458295124" />
-    <property role="3GE5qa" value="process" />
-    <property role="TrG5h" value="condition" />
-    <property role="34LRSv" value="condition" />
-    <property role="R4oN_" value="A boolean expression, used in a Given-constraint" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyi" id="3zVBo_qf0gp" role="1TKVEl">
-      <property role="IQ2nx" value="4106048698528302105" />
-      <property role="TrG5h" value="expr" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="2O9pvn5ZqIy" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="26$zi0qFLBf">
@@ -398,8 +382,110 @@
     <node concept="1TJgyi" id="6dXJLQl5LMv" role="1TKVEl">
       <property role="IQ2nx" value="7169096315619974303" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="26$zi0qFEXk">
+    <property role="EcuMT" value="2424217668458295124" />
+    <property role="3GE5qa" value="process" />
+    <property role="TrG5h" value="Condition" />
+    <property role="34LRSv" value="condition" />
+    <property role="R4oN_" value="A boolean expression, used in a Given-constraint" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6dXJLQl7EAJ" role="1TKVEi">
+      <property role="IQ2ns" value="7169096315620469167" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dXJLQl5LLm" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="2O9pvn5ZqIy" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6dXJLQl8kXZ">
+    <property role="EcuMT" value="7169096315620642687" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="PlusExpression" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="shsBZvpjuw" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="shsBZvpjue">
+    <property role="EcuMT" value="509314126403942286" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="SubExpression" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="shsBZvpjuw" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="shsBZvpjuw">
+    <property role="EcuMT" value="509314126403942304" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="BinaryExpression" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="6dXJLQl5LLm" resolve="Expression" />
+    <node concept="1TJgyj" id="shsBZvpjux" role="1TKVEi">
+      <property role="IQ2ns" value="509314126403942305" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dXJLQl5LLm" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="shsBZvpjuy" role="1TKVEi">
+      <property role="IQ2ns" value="509314126403942306" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dXJLQl5LLm" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="shsBZvpkm0">
+    <property role="EcuMT" value="509314126403945856" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="LessThanExpression" />
+    <property role="34LRSv" value="&lt;" />
+    <ref role="1TJDcQ" node="shsBZvpjuw" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="shsBZvpkm1">
+    <property role="EcuMT" value="509314126403945857" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="GreaterThanExpression" />
+    <property role="34LRSv" value="&gt;" />
+    <ref role="1TJDcQ" node="shsBZvpjuw" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="shsBZvpJMM">
+    <property role="EcuMT" value="509314126404058290" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="ParensExpression" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" node="6dXJLQl5LLm" resolve="Expression" />
+    <node concept="1TJgyj" id="shsBZvpJMN" role="1TKVEi">
+      <property role="IQ2ns" value="509314126404058291" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="inside" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dXJLQl5LLm" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="shsBZvqCy3">
+    <property role="EcuMT" value="509314126404290691" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="FalseLiteral" />
+    <property role="34LRSv" value="false" />
+    <ref role="1TJDcQ" node="6dXJLQl5LLm" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="shsBZvqCyt">
+    <property role="EcuMT" value="509314126404290717" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="TrueLiteral" />
+    <property role="34LRSv" value="true" />
+    <ref role="1TJDcQ" node="6dXJLQl5LLm" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="shsBZvr5NS">
+    <property role="EcuMT" value="509314126404410616" />
+    <property role="3GE5qa" value="DDDtypes" />
+    <property role="TrG5h" value="DDDBooleanType" />
+    <property role="34LRSv" value="boolean" />
+    <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
   </node>
 </model>
 

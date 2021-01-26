@@ -10,48 +10,54 @@
   </imports>
   <registry>
     <language id="126907fc-4c21-412b-bec8-5879aa8d911c" name="dslexample.dddsl">
-      <concept id="2799989124795764054" name="dslexample.dddsl.structure.process" flags="ng" index="0GK8g">
+      <concept id="2799989124795764054" name="dslexample.dddsl.structure.Process" flags="ng" index="0GK8g">
         <child id="2424217668458327512" name="when" index="V2U3S" />
         <child id="2424217668458327514" name="given" index="V2U3U" />
         <child id="2424217668458327517" name="then" index="V2U3X" />
       </concept>
-      <concept id="2799989124795572794" name="dslexample.dddsl.structure.model" flags="ng" index="0JyPW">
+      <concept id="2799989124795572794" name="dslexample.dddsl.structure.Model" flags="ng" index="0JyPW">
         <child id="2799989124795755540" name="processess" index="0GYdi" />
         <child id="2424217668458327490" name="write_side_state" index="V2U3y" />
         <child id="2424217668458327494" name="conditions" index="V2U3A" />
         <child id="2424217668458327499" name="commands" index="V2U3F" />
         <child id="2424217668458327505" name="events" index="V2U3L" />
       </concept>
-      <concept id="7476658783287298476" name="dslexample.dddsl.structure.command" flags="ng" index="23pEgw">
+      <concept id="7476658783287298476" name="dslexample.dddsl.structure.Command" flags="ng" index="23pEgw">
         <child id="2424217668458327475" name="load" index="V2U2j" />
         <child id="3245237112759868273" name="process" index="3CZzU4" />
       </concept>
-      <concept id="7476658783287298475" name="dslexample.dddsl.structure.event" flags="ng" index="23pEgB">
+      <concept id="7476658783287298475" name="dslexample.dddsl.structure.Event" flags="ng" index="23pEgB">
         <child id="2424217668458327484" name="load" index="V2U2s" />
         <child id="3245237112759952513" name="stream" index="3CWs5O" />
         <child id="3245237112759952508" name="process" index="3CWs69" />
       </concept>
-      <concept id="7476658783287298484" name="dslexample.dddsl.structure.given" flags="ng" index="23pEgS" />
-      <concept id="7476658783287298485" name="dslexample.dddsl.structure.when" flags="ng" index="23pEgT">
+      <concept id="7476658783287298484" name="dslexample.dddsl.structure.Given" flags="ng" index="23pEgS" />
+      <concept id="7476658783287298485" name="dslexample.dddsl.structure.When" flags="ng" index="23pEgT">
         <reference id="3245237112760282225" name="command" index="3CXcA4" />
       </concept>
-      <concept id="7476658783287298486" name="dslexample.dddsl.structure.then" flags="ng" index="23pEgU">
+      <concept id="7476658783287298486" name="dslexample.dddsl.structure.Then" flags="ng" index="23pEgU">
         <child id="3245237112760282284" name="events" index="3CXc_p" />
       </concept>
-      <concept id="3890069483231950038" name="dslexample.dddsl.structure.id" flags="ng" index="2mnf_3" />
+      <concept id="3890069483231950038" name="dslexample.dddsl.structure.ID" flags="ng" index="2mnf_3" />
       <concept id="5550713478314280052" name="dslexample.dddsl.structure.DDDStringType" flags="ng" index="2DVlKb" />
       <concept id="5550713478314352066" name="dslexample.dddsl.structure.DDDEntityType" flags="ng" index="2DV$mX">
         <reference id="5550713478314352067" name="entity" index="2DV$mW" />
       </concept>
-      <concept id="2424217668458295124" name="dslexample.dddsl.structure.condition" flags="ng" index="V2y9O">
+      <concept id="2424217668458295124" name="dslexample.dddsl.structure.Condition" flags="ng" index="V2y9O">
         <property id="4106048698528302105" name="expr" index="1yLTAg" />
+        <child id="7169096315620469167" name="expression" index="3QoLqM" />
       </concept>
-      <concept id="2424217668458322383" name="dslexample.dddsl.structure.entity" flags="ng" index="V2TjJ">
+      <concept id="2424217668458322383" name="dslexample.dddsl.structure.Entity" flags="ng" index="V2TjJ">
         <child id="3890069483231950045" name="id" index="2mnf_8" />
         <child id="2424217668458322386" name="attributes" index="V2TjM" />
       </concept>
-      <concept id="2424217668458322388" name="dslexample.dddsl.structure.attribute" flags="ng" index="V2TjO" />
+      <concept id="2424217668458322388" name="dslexample.dddsl.structure.Attribute" flags="ng" index="V2TjO" />
       <concept id="4375424548818098945" name="dslexample.dddsl.structure.DDDIntegerType" flags="ng" index="39qNDK" />
+      <concept id="509314126403945857" name="dslexample.dddsl.structure.GreaterThanExpression" flags="ng" index="3ot3vY" />
+      <concept id="509314126403942304" name="dslexample.dddsl.structure.BinaryExpression" flags="ng" index="3ot4nv">
+        <child id="509314126403942306" name="right" index="3ot4nt" />
+        <child id="509314126403942305" name="left" index="3ot4nu" />
+      </concept>
       <concept id="3245237112760169126" name="dslexample.dddsl.structure.IAttribute" flags="ng" index="3CWDtj">
         <child id="3245237112760169131" name="type" index="3CWDtu" />
       </concept>
@@ -61,6 +67,13 @@
       <concept id="3245237112760210599" name="dslexample.dddsl.structure.DDDDateType" flags="ng" index="3CXv5i" />
       <concept id="3245237112759908788" name="dslexample.dddsl.structure.DDDProcessType" flags="ng" index="3CZDL1">
         <reference id="3245237112759908789" name="process" index="3CZDL0" />
+      </concept>
+      <concept id="7169096315620642687" name="dslexample.dddsl.structure.PlusExpression" flags="ng" index="3Qnf1y" />
+      <concept id="7169096315619974233" name="dslexample.dddsl.structure.StringLiteral" flags="ng" index="3QqEd4">
+        <property id="7169096315619974234" name="value" index="3QqEd7" />
+      </concept>
+      <concept id="7169096315619974295" name="dslexample.dddsl.structure.IntegerLiteral" flags="ng" index="3QqEea">
+        <property id="7169096315619974303" name="value" index="3QqEe2" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -136,6 +149,19 @@
     <node concept="V2y9O" id="26$zi0qG7vj" role="V2U3A">
       <property role="1yLTAg" value="flight.free_places &gt; ticket.number_of_passengers" />
       <property role="TrG5h" value="enough free places" />
+      <node concept="3ot3vY" id="shsBZvr$GP" role="3QoLqM">
+        <node concept="3Qnf1y" id="shsBZvr$GQ" role="3ot4nu">
+          <node concept="3QqEea" id="shsBZvr$GR" role="3ot4nu">
+            <property role="3QqEe2" value="1" />
+          </node>
+          <node concept="3QqEea" id="shsBZvr$GS" role="3ot4nt">
+            <property role="3QqEe2" value="23" />
+          </node>
+        </node>
+        <node concept="3QqEd4" id="shsBZvr$Hr" role="3ot4nt">
+          <property role="3QqEd7" value="ciao" />
+        </node>
+      </node>
     </node>
     <node concept="23pEgw" id="2O9pvn5YwzP" role="V2U3F">
       <property role="TrG5h" value="acquire balloon" />
