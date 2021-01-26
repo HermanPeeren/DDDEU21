@@ -179,5 +179,9 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="6dXJLQl5LMz">
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1M2myG" to="rlgj:6dXJLQl5LMn" resolve="IntegerLiteral" />
+  </node>
 </model>
 
