@@ -53,11 +53,6 @@
       </concept>
       <concept id="2424217668458322388" name="dslexample.dddsl.structure.Attribute" flags="ng" index="V2TjO" />
       <concept id="4375424548818098945" name="dslexample.dddsl.structure.DDDIntegerType" flags="ng" index="39qNDK" />
-      <concept id="509314126403945857" name="dslexample.dddsl.structure.GreaterThanExpression" flags="ng" index="3ot3vY" />
-      <concept id="509314126403942304" name="dslexample.dddsl.structure.BinaryExpression" flags="ng" index="3ot4nv">
-        <child id="509314126403942306" name="right" index="3ot4nt" />
-        <child id="509314126403942305" name="left" index="3ot4nu" />
-      </concept>
       <concept id="3245237112760169126" name="dslexample.dddsl.structure.IAttribute" flags="ng" index="3CWDtj">
         <child id="3245237112760169131" name="type" index="3CWDtu" />
       </concept>
@@ -68,13 +63,7 @@
       <concept id="3245237112759908788" name="dslexample.dddsl.structure.DDDProcessType" flags="ng" index="3CZDL1">
         <reference id="3245237112759908789" name="process" index="3CZDL0" />
       </concept>
-      <concept id="7169096315620642687" name="dslexample.dddsl.structure.PlusExpression" flags="ng" index="3Qnf1y" />
-      <concept id="7169096315619974233" name="dslexample.dddsl.structure.StringLiteral" flags="ng" index="3QqEd4">
-        <property id="7169096315619974234" name="value" index="3QqEd7" />
-      </concept>
-      <concept id="7169096315619974295" name="dslexample.dddsl.structure.IntegerLiteral" flags="ng" index="3QqEea">
-        <property id="7169096315619974303" name="value" index="3QqEe2" />
-      </concept>
+      <concept id="7169096315619974230" name="dslexample.dddsl.structure.Expression" flags="ng" index="3QqEdb" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -149,19 +138,7 @@
     <node concept="V2y9O" id="26$zi0qG7vj" role="V2U3A">
       <property role="1yLTAg" value="flight.free_places &gt; ticket.number_of_passengers" />
       <property role="TrG5h" value="enough free places" />
-      <node concept="3ot3vY" id="shsBZvr$GP" role="3QoLqM">
-        <node concept="3Qnf1y" id="shsBZvr$GQ" role="3ot4nu">
-          <node concept="3QqEea" id="shsBZvr$GR" role="3ot4nu">
-            <property role="3QqEe2" value="1" />
-          </node>
-          <node concept="3QqEea" id="shsBZvr$GS" role="3ot4nt">
-            <property role="3QqEe2" value="23" />
-          </node>
-        </node>
-        <node concept="3QqEd4" id="shsBZvr$Hr" role="3ot4nt">
-          <property role="3QqEd7" value="ciao" />
-        </node>
-      </node>
+      <node concept="3QqEdb" id="shsBZvs2Bn" role="3QoLqM" />
     </node>
     <node concept="23pEgw" id="2O9pvn5YwzP" role="V2U3F">
       <property role="TrG5h" value="acquire balloon" />
