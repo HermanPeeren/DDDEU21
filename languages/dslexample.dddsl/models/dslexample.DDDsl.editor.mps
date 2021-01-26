@@ -76,7 +76,7 @@
     </language>
   </registry>
   <node concept="24kQdi" id="26$zi0qFRan">
-    <ref role="1XX52x" to="rlgj:6v2roN$DcAG" resolve="command" />
+    <ref role="1XX52x" to="rlgj:6v2roN$DcAG" resolve="Command" />
     <node concept="3EZMnI" id="26$zi0qFRas" role="2wV5jI">
       <node concept="3F0ifn" id="26$zi0qFRau" role="3EZMnx">
         <property role="3F0ifm" value="command" />
@@ -147,7 +147,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="26$zi0qFRb4">
-    <ref role="1XX52x" to="rlgj:6v2roN$DcAF" resolve="event" />
+    <ref role="1XX52x" to="rlgj:6v2roN$DcAF" resolve="Event" />
     <node concept="3EZMnI" id="26$zi0qFRb6" role="2wV5jI">
       <node concept="3F0ifn" id="26$zi0qFRbd" role="3EZMnx">
         <property role="3F0ifm" value="event" />
@@ -231,7 +231,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="26$zi0qFRbZ">
-    <ref role="1XX52x" to="rlgj:2rrzOoApq8U" resolve="model" />
+    <ref role="1XX52x" to="rlgj:2rrzOoApq8U" resolve="Model" />
     <node concept="3EZMnI" id="26$zi0qFRc1" role="2wV5jI">
       <node concept="3F0ifn" id="26$zi0qFRc8" role="3EZMnx">
         <property role="3F0ifm" value="model" />
@@ -372,7 +372,7 @@
   </node>
   <node concept="24kQdi" id="26$zi0qFRct">
     <property role="3GE5qa" value="write-side state" />
-    <ref role="1XX52x" to="rlgj:26$zi0qFLBf" resolve="entity" />
+    <ref role="1XX52x" to="rlgj:26$zi0qFLBf" resolve="Entity" />
     <node concept="3EZMnI" id="26$zi0qFRcv" role="2wV5jI">
       <node concept="3F0ifn" id="26$zi0qFRcA" role="3EZMnx">
         <property role="3F0ifm" value="entity" />
@@ -415,7 +415,7 @@
   </node>
   <node concept="24kQdi" id="26$zi0qFRed">
     <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="rlgj:26$zi0qFLBk" resolve="attribute" />
+    <ref role="1XX52x" to="rlgj:26$zi0qFLBk" resolve="Attribute" />
     <node concept="3EZMnI" id="26$zi0qFRef" role="2wV5jI">
       <node concept="3F0ifn" id="26$zi0qFReq" role="3EZMnx">
         <property role="3F0ifm" value="attribute" />
@@ -448,7 +448,7 @@
   </node>
   <node concept="24kQdi" id="26$zi0qFReH">
     <property role="3GE5qa" value="process" />
-    <ref role="1XX52x" to="rlgj:2rrzOoAq8Pm" resolve="process" />
+    <ref role="1XX52x" to="rlgj:2rrzOoAq8Pm" resolve="Process" />
     <node concept="3EZMnI" id="26$zi0qFReJ" role="2wV5jI">
       <node concept="3F0ifn" id="26$zi0qFReQ" role="3EZMnx">
         <property role="3F0ifm" value="process" />
@@ -592,7 +592,7 @@
   </node>
   <node concept="24kQdi" id="3nWjpmzCLWR">
     <property role="3GE5qa" value="write-side state" />
-    <ref role="1XX52x" to="rlgj:3nWjpmzCbjm" resolve="id" />
+    <ref role="1XX52x" to="rlgj:3nWjpmzCbjm" resolve="ID" />
     <node concept="3EZMnI" id="3nWjpmzCLWT" role="2wV5jI">
       <node concept="3F0ifn" id="3nWjpmzCLWU" role="3EZMnx">
         <property role="3F0ifm" value="id" />
@@ -654,7 +654,7 @@
   </node>
   <node concept="24kQdi" id="2O9pvn5ZqMI">
     <property role="3GE5qa" value="process" />
-    <ref role="1XX52x" to="rlgj:6v2roN$DcAQ" resolve="then" />
+    <ref role="1XX52x" to="rlgj:6v2roN$DcAQ" resolve="Then" />
     <node concept="3EZMnI" id="2O9pvn5ZqMN" role="2wV5jI">
       <node concept="l2Vlx" id="2O9pvn5ZqMO" role="2iSdaV" />
       <node concept="3F0ifn" id="2O9pvn5ZqMK" role="3EZMnx">

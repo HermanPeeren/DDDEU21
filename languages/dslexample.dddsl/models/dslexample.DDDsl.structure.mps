@@ -53,7 +53,7 @@
   </registry>
   <node concept="1TIwiD" id="2rrzOoApq8U">
     <property role="EcuMT" value="2799989124795572794" />
-    <property role="TrG5h" value="model" />
+    <property role="TrG5h" value="Model" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="model" />
     <property role="R4oN_" value="A Bounded Context in DDD-jargon. A write-side model." />
@@ -66,7 +66,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="write_side_state" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFLBf" resolve="entity" />
+      <ref role="20lvS9" node="26$zi0qFLBf" resolve="Entity" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMR6" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327494" />
@@ -80,25 +80,25 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="commands" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6v2roN$DcAG" resolve="command" />
+      <ref role="20lvS9" node="6v2roN$DcAG" resolve="Command" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMRh" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327505" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="events" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6v2roN$DcAF" resolve="event" />
+      <ref role="20lvS9" node="6v2roN$DcAF" resolve="Event" />
     </node>
     <node concept="1TJgyj" id="2rrzOoAq6Kk" role="1TKVEi">
       <property role="IQ2ns" value="2799989124795755540" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="processess" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2rrzOoAq8Pm" resolve="process" />
+      <ref role="20lvS9" node="2rrzOoAq8Pm" resolve="Process" />
     </node>
   </node>
   <node concept="1TIwiD" id="2rrzOoAq8Pm">
-    <property role="TrG5h" value="process" />
+    <property role="TrG5h" value="Process" />
     <property role="EcuMT" value="2799989124795764054" />
     <property role="3GE5qa" value="process" />
     <property role="R4oN_" value="A process defines which event is output when a command is input, given the state. Conditions given the state are a.k.a. &quot;invariants&quot; of an &quot;aggregate&quot;." />
@@ -112,26 +112,26 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="when" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAP" resolve="when" />
+      <ref role="20lvS9" node="6v2roN$DcAP" resolve="When" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMRq" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327514" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="given" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAO" resolve="given" />
+      <ref role="20lvS9" node="6v2roN$DcAO" resolve="Given" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMRt" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327517" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="then" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAQ" resolve="then" />
+      <ref role="20lvS9" node="6v2roN$DcAQ" resolve="Then" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAF">
     <property role="EcuMT" value="7476658783287298475" />
-    <property role="TrG5h" value="event" />
+    <property role="TrG5h" value="Event" />
     <property role="34LRSv" value="event" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="26$zi0qFHij" role="PzmwI">
@@ -156,12 +156,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="load" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFLBk" resolve="attribute" />
+      <ref role="20lvS9" node="26$zi0qFLBk" resolve="Attribute" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAG">
     <property role="EcuMT" value="7476658783287298476" />
-    <property role="TrG5h" value="command" />
+    <property role="TrG5h" value="Command" />
     <property role="34LRSv" value="command" />
     <property role="R4oN_" value="An incoming message to change state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -180,33 +180,33 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="load" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFLBk" resolve="attribute" />
+      <ref role="20lvS9" node="26$zi0qFLBk" resolve="Attribute" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAO">
     <property role="EcuMT" value="7476658783287298484" />
     <property role="3GE5qa" value="process" />
-    <property role="TrG5h" value="given" />
+    <property role="TrG5h" value="Given" />
     <property role="34LRSv" value="given" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAP">
     <property role="EcuMT" value="7476658783287298485" />
     <property role="3GE5qa" value="process" />
-    <property role="TrG5h" value="when" />
+    <property role="TrG5h" value="When" />
     <property role="34LRSv" value="when" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2O9pvn5ZqLL" role="1TKVEi">
       <property role="IQ2ns" value="3245237112760282225" />
       <property role="20kJfa" value="command" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAG" resolve="command" />
+      <ref role="20lvS9" node="6v2roN$DcAG" resolve="Command" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAQ">
     <property role="EcuMT" value="7476658783287298486" />
     <property role="3GE5qa" value="process" />
-    <property role="TrG5h" value="then" />
+    <property role="TrG5h" value="Then" />
     <property role="34LRSv" value="then" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2O9pvn5ZqMG" role="1TKVEi">
@@ -235,7 +235,7 @@
   </node>
   <node concept="1TIwiD" id="26$zi0qFLBf">
     <property role="EcuMT" value="2424217668458322383" />
-    <property role="TrG5h" value="entity" />
+    <property role="TrG5h" value="Entity" />
     <property role="3GE5qa" value="write-side state" />
     <property role="R4oN_" value="result of a write-side projection, reconstituted from a stream of events." />
     <property role="34LRSv" value="entity" />
@@ -248,18 +248,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="id" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3nWjpmzCbjm" resolve="id" />
+      <ref role="20lvS9" node="3nWjpmzCbjm" resolve="ID" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFLBi" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458322386" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attributes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFLBk" resolve="attribute" />
+      <ref role="20lvS9" node="26$zi0qFLBk" resolve="Attribute" />
     </node>
   </node>
   <node concept="1TIwiD" id="26$zi0qFLBk">
-    <property role="TrG5h" value="attribute" />
+    <property role="TrG5h" value="Attribute" />
     <property role="EcuMT" value="2424217668458322388" />
     <property role="3GE5qa" value="" />
     <property role="R4oN_" value="An attribute of an event-load, a command-load or an entity." />
@@ -291,7 +291,7 @@
       <property role="IQ2ns" value="5550713478314352067" />
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="26$zi0qFLBf" resolve="entity" />
+      <ref role="20lvS9" node="26$zi0qFLBf" resolve="Entity" />
     </node>
   </node>
   <node concept="1TIwiD" id="4O867Z$TExF">
@@ -318,7 +318,7 @@
   <node concept="1TIwiD" id="3nWjpmzCbjm">
     <property role="EcuMT" value="3890069483231950038" />
     <property role="3GE5qa" value="write-side state" />
-    <property role="TrG5h" value="id" />
+    <property role="TrG5h" value="ID" />
     <property role="34LRSv" value="id" />
     <property role="R4oN_" value="The identifier-attribute of an entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -335,7 +335,7 @@
       <property role="IQ2ns" value="3245237112759908789" />
       <property role="20kJfa" value="process" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2rrzOoAq8Pm" resolve="process" />
+      <ref role="20lvS9" node="2rrzOoAq8Pm" resolve="Process" />
     </node>
   </node>
   <node concept="PlHQZ" id="2O9pvn5YZaA">
@@ -368,7 +368,7 @@
       <property role="IQ2ns" value="3245237112760282307" />
       <property role="20kJfa" value="event" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAF" resolve="event" />
+      <ref role="20lvS9" node="6v2roN$DcAF" resolve="Event" />
     </node>
   </node>
 </model>
