@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -61,6 +60,13 @@
     <node concept="PrWs8" id="26$zi0qFHib" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="5uPh8KHO6bo" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939100888" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="actors" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="5uPh8KHO696" resolve="Actor" />
+    </node>
     <node concept="1TJgyj" id="26$zi0qFMR2" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327490" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -68,26 +74,19 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="26$zi0qFLBf" resolve="Entity" />
     </node>
-    <node concept="1TJgyj" id="26$zi0qFMR6" role="1TKVEi">
-      <property role="IQ2ns" value="2424217668458327494" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="conditions" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="26$zi0qFEXk" resolve="Condition" />
-    </node>
     <node concept="1TJgyj" id="26$zi0qFMRb" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327499" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="commands" />
+      <property role="20kJfa" value="intentions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6v2roN$DcAG" resolve="Command" />
+      <ref role="20lvS9" node="6v2roN$DcAG" resolve="Intention" />
     </node>
     <node concept="1TJgyj" id="26$zi0qFMRh" role="1TKVEi">
       <property role="IQ2ns" value="2424217668458327505" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="events" />
+      <property role="20kJfa" value="facts" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6v2roN$DcAF" resolve="Event" />
+      <ref role="20lvS9" node="6v2roN$DcAF" resolve="Fact" />
     </node>
     <node concept="1TJgyj" id="2rrzOoAq6Kk" role="1TKVEi">
       <property role="IQ2ns" value="2799989124795755540" />
@@ -131,9 +130,10 @@
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAF">
     <property role="EcuMT" value="7476658783287298475" />
-    <property role="TrG5h" value="Event" />
-    <property role="34LRSv" value="event" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="Fact" />
+    <property role="34LRSv" value="fact" />
+    <property role="R4oN_" value="An outgoing message of something that has happened in the past. In DDD a.k.a. (Domain) Event." />
+    <ref role="1TJDcQ" node="5uPh8KHO64M" resolve="Message" />
     <node concept="PrWs8" id="26$zi0qFHij" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -161,10 +161,10 @@
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAG">
     <property role="EcuMT" value="7476658783287298476" />
-    <property role="TrG5h" value="Command" />
-    <property role="34LRSv" value="command" />
-    <property role="R4oN_" value="An incoming message to change state" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="TrG5h" value="Intention" />
+    <property role="34LRSv" value="intention" />
+    <property role="R4oN_" value="An incoming message to change state. In DDD a.k.a. Command. Put in 3rd person singular, as there always is an Actor having the Intention." />
+    <ref role="1TJDcQ" node="5uPh8KHO64M" resolve="Message" />
     <node concept="PrWs8" id="26$zi0qFHig" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -188,7 +188,15 @@
     <property role="3GE5qa" value="process" />
     <property role="TrG5h" value="Given" />
     <property role="34LRSv" value="given" />
+    <property role="R4oN_" value="A condition, a boolean expression, often involving state" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5uPh8KHO6gc" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939101196" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dXJLQl5LLm" resolve="Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAP">
     <property role="EcuMT" value="7476658783287298485" />
@@ -196,11 +204,17 @@
     <property role="TrG5h" value="When" />
     <property role="34LRSv" value="when" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5uPh8KHO6cP" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939100981" />
+      <property role="20kJfa" value="actor" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5uPh8KHO696" resolve="Actor" />
+    </node>
     <node concept="1TJgyj" id="2O9pvn5ZqLL" role="1TKVEi">
       <property role="IQ2ns" value="3245237112760282225" />
-      <property role="20kJfa" value="command" />
+      <property role="20kJfa" value="intention" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAG" resolve="Command" />
+      <ref role="20lvS9" node="6v2roN$DcAG" resolve="Intention" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAQ">
@@ -208,12 +222,13 @@
     <property role="3GE5qa" value="process" />
     <property role="TrG5h" value="Then" />
     <property role="34LRSv" value="then" />
+    <property role="R4oN_" value="Outputs 0 or more Facts (&quot;Events&quot;);" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2O9pvn5ZqMG" role="1TKVEi">
-      <property role="IQ2ns" value="3245237112760282284" />
+    <node concept="1TJgyj" id="5uPh8KHO6fR" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939101175" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="events" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20kJfa" value="facts" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2O9pvn5ZqN2" resolve="DDDEventType" />
     </node>
   </node>
@@ -352,7 +367,7 @@
       <property role="IQ2ns" value="3245237112760282307" />
       <property role="20kJfa" value="event" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAF" resolve="Event" />
+      <ref role="20lvS9" node="6v2roN$DcAF" resolve="Fact" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dXJLQl5LLm">
@@ -383,24 +398,6 @@
       <property role="IQ2nx" value="7169096315619974303" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="26$zi0qFEXk">
-    <property role="EcuMT" value="2424217668458295124" />
-    <property role="3GE5qa" value="process" />
-    <property role="TrG5h" value="Condition" />
-    <property role="34LRSv" value="condition" />
-    <property role="R4oN_" value="A boolean expression, used in a Given-constraint" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="6dXJLQl7EAJ" role="1TKVEi">
-      <property role="IQ2ns" value="7169096315620469167" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="expression" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6dXJLQl5LLm" resolve="Expression" />
-    </node>
-    <node concept="PrWs8" id="2O9pvn5ZqIy" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6dXJLQl8kXZ">
@@ -486,6 +483,21 @@
     <property role="TrG5h" value="DDDBooleanType" />
     <property role="34LRSv" value="boolean" />
     <ref role="1TJDcQ" node="4O867Z$TkhL" resolve="DDDType" />
+  </node>
+  <node concept="1TIwiD" id="5uPh8KHO64M">
+    <property role="EcuMT" value="6320033020939100466" />
+    <property role="TrG5h" value="Message" />
+    <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="A message can be either an Intention (a.k.a. Command) or a Fact (a.k.a. Event)." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5uPh8KHO696">
+    <property role="TrG5h" value="Actor" />
+    <property role="EcuMT" value="6320033020939100742" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5uPh8KHO699" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

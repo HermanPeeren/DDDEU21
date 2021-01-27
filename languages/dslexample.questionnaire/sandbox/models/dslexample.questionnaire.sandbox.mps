@@ -77,7 +77,7 @@
     <node concept="WcUho" id="3mLOxDjzb_M" role="WcUhm">
       <property role="WcUht" value="Do you use a domain-specific framework or library to make your software?" />
       <property role="WcUh0" value="A framework or library that is specially developed for a specific domain contains a lot of domain specific knowledge. But can only be used by developers, not by the domain experts. A DSL can be easily made from it. The framework or library forms the semantics of a language." />
-      <property role="WcUhv" value="30" />
+      <property role="WcUhv" value="5" />
       <property role="TrG5h" value="framework" />
       <node concept="WcUh6" id="3mLOxDjzb_N" role="WcUh4">
         <property role="WcUhb" value="Yes, we code with a (domain specific) framework or library." />

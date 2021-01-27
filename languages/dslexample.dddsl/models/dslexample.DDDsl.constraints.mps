@@ -178,7 +178,7 @@
                 <node concept="2Rf3mk" id="2O9pvn5ZrsU" role="2OqNvi">
                   <node concept="1xMEDy" id="2O9pvn5ZrsV" role="1xVPHs">
                     <node concept="chp4Y" id="2O9pvn5ZrE$" role="ri$Ld">
-                      <ref role="cht4Q" to="rlgj:6v2roN$DcAF" resolve="Event" />
+                      <ref role="cht4Q" to="rlgj:6v2roN$DcAF" resolve="Fact" />
                     </node>
                   </node>
                 </node>

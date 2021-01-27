@@ -18,34 +18,33 @@
       <concept id="2799989124795572794" name="dslexample.dddsl.structure.Model" flags="ng" index="0JyPW">
         <child id="2799989124795755540" name="processess" index="0GYdi" />
         <child id="2424217668458327490" name="write_side_state" index="V2U3y" />
-        <child id="2424217668458327494" name="conditions" index="V2U3A" />
-        <child id="2424217668458327499" name="commands" index="V2U3F" />
-        <child id="2424217668458327505" name="events" index="V2U3L" />
+        <child id="2424217668458327499" name="intentions" index="V2U3F" />
+        <child id="2424217668458327505" name="facts" index="V2U3L" />
+        <child id="6320033020939100888" name="actors" index="1Upipk" />
       </concept>
-      <concept id="7476658783287298476" name="dslexample.dddsl.structure.Command" flags="ng" index="23pEgw">
+      <concept id="7476658783287298476" name="dslexample.dddsl.structure.Intention" flags="ng" index="23pEgw">
         <child id="2424217668458327475" name="load" index="V2U2j" />
         <child id="3245237112759868273" name="process" index="3CZzU4" />
       </concept>
-      <concept id="7476658783287298475" name="dslexample.dddsl.structure.Event" flags="ng" index="23pEgB">
+      <concept id="7476658783287298475" name="dslexample.dddsl.structure.Fact" flags="ng" index="23pEgB">
         <child id="2424217668458327484" name="load" index="V2U2s" />
         <child id="3245237112759952513" name="stream" index="3CWs5O" />
         <child id="3245237112759952508" name="process" index="3CWs69" />
       </concept>
-      <concept id="7476658783287298484" name="dslexample.dddsl.structure.Given" flags="ng" index="23pEgS" />
+      <concept id="7476658783287298484" name="dslexample.dddsl.structure.Given" flags="ng" index="23pEgS">
+        <child id="6320033020939101196" name="condition" index="1Upi20" />
+      </concept>
       <concept id="7476658783287298485" name="dslexample.dddsl.structure.When" flags="ng" index="23pEgT">
-        <reference id="3245237112760282225" name="command" index="3CXcA4" />
+        <reference id="3245237112760282225" name="intention" index="3CXcA4" />
+        <reference id="6320033020939100981" name="actor" index="1UpiuT" />
       </concept>
       <concept id="7476658783287298486" name="dslexample.dddsl.structure.Then" flags="ng" index="23pEgU">
-        <child id="3245237112760282284" name="events" index="3CXc_p" />
+        <child id="6320033020939101175" name="facts" index="1UpitV" />
       </concept>
       <concept id="3890069483231950038" name="dslexample.dddsl.structure.ID" flags="ng" index="2mnf_3" />
       <concept id="5550713478314280052" name="dslexample.dddsl.structure.DDDStringType" flags="ng" index="2DVlKb" />
       <concept id="5550713478314352066" name="dslexample.dddsl.structure.DDDEntityType" flags="ng" index="2DV$mX">
         <reference id="5550713478314352067" name="entity" index="2DV$mW" />
-      </concept>
-      <concept id="2424217668458295124" name="dslexample.dddsl.structure.Condition" flags="ng" index="V2y9O">
-        <property id="4106048698528302105" name="expr" index="1yLTAg" />
-        <child id="7169096315620469167" name="expression" index="3QoLqM" />
       </concept>
       <concept id="2424217668458322383" name="dslexample.dddsl.structure.Entity" flags="ng" index="V2TjJ">
         <child id="3890069483231950045" name="id" index="2mnf_8" />
@@ -53,6 +52,7 @@
       </concept>
       <concept id="2424217668458322388" name="dslexample.dddsl.structure.Attribute" flags="ng" index="V2TjO" />
       <concept id="4375424548818098945" name="dslexample.dddsl.structure.DDDIntegerType" flags="ng" index="39qNDK" />
+      <concept id="509314126404290717" name="dslexample.dddsl.structure.TrueLiteral" flags="ng" index="3ouZFy" />
       <concept id="3245237112760169126" name="dslexample.dddsl.structure.IAttribute" flags="ng" index="3CWDtj">
         <child id="3245237112760169131" name="type" index="3CWDtu" />
       </concept>
@@ -63,7 +63,7 @@
       <concept id="3245237112759908788" name="dslexample.dddsl.structure.DDDProcessType" flags="ng" index="3CZDL1">
         <reference id="3245237112759908789" name="process" index="3CZDL0" />
       </concept>
-      <concept id="7169096315619974230" name="dslexample.dddsl.structure.Expression" flags="ng" index="3QqEdb" />
+      <concept id="6320033020939100742" name="dslexample.dddsl.structure.Actor" flags="ng" index="1Upira" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -73,6 +73,18 @@
   </registry>
   <node concept="0JyPW" id="26$zi0qFRak">
     <property role="TrG5h" value="Balloon flight planning and reservation" />
+    <node concept="1Upira" id="5uPh8KHPd$l" role="1Upipk">
+      <property role="TrG5h" value="customer" />
+    </node>
+    <node concept="1Upira" id="5uPh8KHPd$n" role="1Upipk">
+      <property role="TrG5h" value="planner" />
+    </node>
+    <node concept="1Upira" id="5uPh8KHPd$q" role="1Upipk">
+      <property role="TrG5h" value="company" />
+    </node>
+    <node concept="1Upira" id="5uPh8KHPd$u" role="1Upipk">
+      <property role="TrG5h" value="system" />
+    </node>
     <node concept="V2TjJ" id="2O9pvn5Z9cO" role="V2U3y">
       <property role="TrG5h" value="Balloon" />
       <node concept="2mnf_3" id="2O9pvn5Z9cP" role="2mnf_8">
@@ -135,25 +147,20 @@
         </node>
       </node>
     </node>
-    <node concept="V2y9O" id="26$zi0qG7vj" role="V2U3A">
-      <property role="1yLTAg" value="flight.free_places &gt; ticket.number_of_passengers" />
-      <property role="TrG5h" value="enough free places" />
-      <node concept="3QqEdb" id="shsBZvs2Bn" role="3QoLqM" />
-    </node>
     <node concept="23pEgw" id="2O9pvn5YwzP" role="V2U3F">
-      <property role="TrG5h" value="acquire balloon" />
+      <property role="TrG5h" value="acquires balloon" />
       <node concept="V2TjO" id="2O9pvn5Z9bG" role="V2U2j">
         <property role="TrG5h" value="balloon" />
         <node concept="2DV$mX" id="2O9pvn5Z9dr" role="3CWDtu">
           <ref role="2DV$mW" node="2O9pvn5Z9cO" resolve="Balloon" />
         </node>
       </node>
-      <node concept="3CZDL1" id="2O9pvn5Yw$5" role="3CZzU4">
-        <ref role="3CZDL0" node="26$zi0qG7vH" resolve="acquiring a balloon" />
+      <node concept="3CZDL1" id="5uPh8KHPEad" role="3CZzU4">
+        <ref role="3CZDL0" node="5uPh8KHPd_5" resolve="managing balloons" />
       </node>
     </node>
     <node concept="23pEgw" id="2O9pvn5YwyY" role="V2U3F">
-      <property role="TrG5h" value="plan a flight" />
+      <property role="TrG5h" value="plans a flight" />
       <node concept="V2TjO" id="2O9pvn5Z9c0" role="V2U2j">
         <property role="TrG5h" value="balloon" />
         <node concept="2DV$mX" id="2O9pvn5Z9di" role="3CWDtu">
@@ -168,12 +175,12 @@
         <property role="TrG5h" value="morning-evening" />
         <node concept="2DVlKb" id="2O9pvn5Z9co" role="3CWDtu" />
       </node>
-      <node concept="3CZDL1" id="2O9pvn5Ywzb" role="3CZzU4">
-        <ref role="3CZDL0" node="6h4SlfROgev" resolve="planning a flight" />
+      <node concept="3CZDL1" id="5uPh8KHPEag" role="3CZzU4">
+        <ref role="3CZDL0" node="5uPh8KHPdAc" resolve="planning flights" />
       </node>
     </node>
     <node concept="23pEgw" id="2O9pvn5Ywyq" role="V2U3F">
-      <property role="TrG5h" value="buy a ticket" />
+      <property role="TrG5h" value="buys a ticket" />
       <node concept="V2TjO" id="2O9pvn5ZqGW" role="V2U2j">
         <property role="TrG5h" value="ticketnumber" />
         <node concept="2DVlKb" id="2O9pvn5ZqH0" role="3CWDtu" />
@@ -182,18 +189,18 @@
         <property role="TrG5h" value="number of passengers" />
         <node concept="39qNDK" id="2O9pvn5ZqHc" role="3CWDtu" />
       </node>
-      <node concept="3CZDL1" id="2O9pvn5YwyE" role="3CZzU4">
-        <ref role="3CZDL0" node="6h4SlfROlTa" resolve="buying a ticket" />
+      <node concept="3CZDL1" id="5uPh8KHPEcK" role="3CZzU4">
+        <ref role="3CZDL0" node="5uPh8KHPEaj" resolve="buying tickets" />
       </node>
     </node>
     <node concept="23pEgw" id="2O9pvn5YwxQ" role="V2U3F">
-      <property role="TrG5h" value="make reservation" />
-      <node concept="3CZDL1" id="2O9pvn5Ywy7" role="3CZzU4">
-        <ref role="3CZDL0" node="2O9pvn5Ywuf" resolve="making a reservation" />
+      <property role="TrG5h" value="makes reservation" />
+      <node concept="3CZDL1" id="5uPh8KHPEcN" role="3CZzU4">
+        <ref role="3CZDL0" node="5uPh8KHPEbx" resolve="making reservations" />
       </node>
     </node>
     <node concept="23pEgB" id="2O9pvn5YwAd" role="V2U3L">
-      <property role="TrG5h" value="balloon acquired" />
+      <property role="TrG5h" value="balloon was acquired" />
       <node concept="V2TjO" id="2O9pvn5Z9bN" role="V2U2s">
         <property role="TrG5h" value="call-sign" />
         <node concept="2DVlKb" id="2O9pvn5ZqGF" role="3CWDtu" />
@@ -202,15 +209,15 @@
         <property role="TrG5h" value="capacity" />
         <node concept="39qNDK" id="2O9pvn5ZqGO" role="3CWDtu" />
       </node>
-      <node concept="3CZDL1" id="2O9pvn5YwAs" role="3CWs69">
-        <ref role="3CZDL0" node="26$zi0qG7vH" resolve="acquiring a balloon" />
+      <node concept="3CZDL1" id="5uPh8KHPEb7" role="3CWs69">
+        <ref role="3CZDL0" node="5uPh8KHPd_5" resolve="managing balloons" />
       </node>
       <node concept="2DV$mX" id="2O9pvn5Z9dl" role="3CWs5O">
         <ref role="2DV$mW" node="2O9pvn5Z9cO" resolve="Balloon" />
       </node>
     </node>
     <node concept="23pEgB" id="2O9pvn5Yw_E" role="V2U3L">
-      <property role="TrG5h" value="flight planned" />
+      <property role="TrG5h" value="flight was planned" />
       <node concept="V2TjO" id="2O9pvn5Z9if" role="V2U2s">
         <property role="TrG5h" value="call-sign" />
         <node concept="2DVlKb" id="2O9pvn5ZqGT" role="3CWDtu" />
@@ -223,15 +230,15 @@
         <property role="TrG5h" value="morning-evening" />
         <node concept="2DVlKb" id="2O9pvn5ZqGp" role="3CWDtu" />
       </node>
-      <node concept="3CZDL1" id="2O9pvn5Yw_V" role="3CWs69">
-        <ref role="3CZDL0" node="6h4SlfROgev" resolve="planning a flight" />
+      <node concept="3CZDL1" id="5uPh8KHPEb4" role="3CWs69">
+        <ref role="3CZDL0" node="5uPh8KHPdAc" resolve="planning flights" />
       </node>
       <node concept="2DV$mX" id="2O9pvn5Z9eA" role="3CWs5O">
         <ref role="2DV$mW" node="2O9pvn5Z9dN" resolve="Flight" />
       </node>
     </node>
     <node concept="23pEgB" id="2O9pvn5Yw_6" role="V2U3L">
-      <property role="TrG5h" value="ticket bought" />
+      <property role="TrG5h" value="ticket was bought" />
       <node concept="V2TjO" id="2O9pvn5ZqGs" role="V2U2s">
         <property role="TrG5h" value="reservationnumber" />
         <node concept="2DVlKb" id="2O9pvn5ZqGw" role="3CWDtu" />
@@ -240,15 +247,15 @@
         <property role="TrG5h" value="number of passengers" />
         <node concept="39qNDK" id="2O9pvn5ZqG$" role="3CWDtu" />
       </node>
-      <node concept="3CZDL1" id="2O9pvn5Yw_p" role="3CWs69">
-        <ref role="3CZDL0" node="6h4SlfROlTa" resolve="buying a ticket" />
+      <node concept="3CZDL1" id="5uPh8KHPEcE" role="3CWs69">
+        <ref role="3CZDL0" node="5uPh8KHPEaj" resolve="buying tickets" />
       </node>
       <node concept="2DV$mX" id="2O9pvn5Z9fv" role="3CWs5O">
         <ref role="2DV$mW" node="2O9pvn5Z9eW" resolve="Ticket" />
       </node>
     </node>
     <node concept="23pEgB" id="2O9pvn5Yw$u" role="V2U3L">
-      <property role="TrG5h" value="reservation made" />
+      <property role="TrG5h" value="reservation was made" />
       <node concept="V2TjO" id="2O9pvn5ZqHh" role="V2U2s">
         <property role="TrG5h" value="id" />
         <node concept="2DVlKb" id="2O9pvn5ZqHl" role="3CWDtu" />
@@ -261,67 +268,76 @@
         <property role="TrG5h" value="flightnumber" />
         <node concept="2DVlKb" id="2O9pvn5ZqHD" role="3CWDtu" />
       </node>
-      <node concept="3CZDL1" id="2O9pvn5Yw$N" role="3CWs69">
-        <ref role="3CZDL0" node="2O9pvn5Ywuf" resolve="making a reservation" />
+      <node concept="3CZDL1" id="5uPh8KHPEcH" role="3CWs69">
+        <ref role="3CZDL0" node="5uPh8KHPEbx" resolve="making reservations" />
       </node>
       <node concept="2DV$mX" id="2O9pvn5Z9hm" role="3CWs5O">
         <ref role="2DV$mW" node="2O9pvn5Z9fR" resolve="Reservation" />
       </node>
     </node>
-    <node concept="0GK8g" id="26$zi0qG7vH" role="0GYdi">
-      <property role="TrG5h" value="acquiring a balloon" />
-      <node concept="23pEgT" id="26$zi0qG7vI" role="V2U3S">
-        <ref role="3CXcA4" node="2O9pvn5YwzP" resolve="acquire balloon" />
+    <node concept="0GK8g" id="5uPh8KHPd_5" role="0GYdi">
+      <property role="TrG5h" value="managing balloons" />
+      <node concept="23pEgT" id="5uPh8KHPd_6" role="V2U3S">
+        <ref role="1UpiuT" node="5uPh8KHPd$q" resolve="company" />
+        <ref role="3CXcA4" node="2O9pvn5YwzP" resolve="acquires balloon" />
       </node>
-      <node concept="23pEgS" id="26$zi0qG7vJ" role="V2U3U" />
-      <node concept="23pEgU" id="26$zi0qG7vK" role="V2U3X">
-        <node concept="3CXc$R" id="2O9pvn5ZVyk" role="3CXc_p">
-          <ref role="3CXc$Q" node="2O9pvn5YwAd" resolve="balloon acquired" />
+      <node concept="23pEgS" id="5uPh8KHPd_7" role="V2U3U">
+        <node concept="3ouZFy" id="5uPh8KHPd_I" role="1Upi20" />
+      </node>
+      <node concept="23pEgU" id="5uPh8KHPd_9" role="V2U3X">
+        <node concept="3CXc$R" id="5uPh8KHPd_O" role="1UpitV">
+          <ref role="3CXc$Q" node="2O9pvn5YwAd" resolve="balloon was acquired" />
         </node>
       </node>
     </node>
-    <node concept="0GK8g" id="6h4SlfROgev" role="0GYdi">
-      <property role="TrG5h" value="planning a flight" />
-      <node concept="23pEgT" id="6h4SlfROgew" role="V2U3S">
-        <ref role="3CXcA4" node="2O9pvn5YwyY" resolve="plan a flight" />
+    <node concept="0GK8g" id="5uPh8KHPdAc" role="0GYdi">
+      <property role="TrG5h" value="planning flights" />
+      <node concept="23pEgT" id="5uPh8KHPdAd" role="V2U3S">
+        <ref role="1UpiuT" node="5uPh8KHPd$n" resolve="planner" />
+        <ref role="3CXcA4" node="2O9pvn5YwyY" resolve="plans a flight" />
       </node>
-      <node concept="23pEgS" id="6h4SlfROgex" role="V2U3U" />
-      <node concept="23pEgU" id="6h4SlfROgey" role="V2U3X">
-        <node concept="3CXc$R" id="2O9pvn5ZVyq" role="3CXc_p">
-          <ref role="3CXc$Q" node="2O9pvn5Yw_E" resolve="flight planned" />
+      <node concept="23pEgS" id="5uPh8KHPdAe" role="V2U3U">
+        <node concept="3ouZFy" id="5uPh8KHPdAO" role="1Upi20" />
+      </node>
+      <node concept="23pEgU" id="5uPh8KHPdAg" role="V2U3X">
+        <node concept="3CXc$R" id="5uPh8KHPdAU" role="1UpitV">
+          <ref role="3CXc$Q" node="2O9pvn5Yw_E" resolve="flight was planned" />
         </node>
       </node>
     </node>
-    <node concept="0GK8g" id="6h4SlfROlTa" role="0GYdi">
-      <property role="TrG5h" value="buying a ticket" />
-      <node concept="23pEgT" id="6h4SlfROlTb" role="V2U3S">
-        <ref role="3CXcA4" node="2O9pvn5Ywyq" resolve="buy a ticket" />
+    <node concept="0GK8g" id="5uPh8KHPEaj" role="0GYdi">
+      <property role="TrG5h" value="buying tickets" />
+      <node concept="23pEgT" id="5uPh8KHPEak" role="V2U3S">
+        <ref role="1UpiuT" node="5uPh8KHPd$l" resolve="customer" />
+        <ref role="3CXcA4" node="2O9pvn5Ywyq" resolve="buys a ticket" />
       </node>
-      <node concept="23pEgS" id="6h4SlfROlTc" role="V2U3U" />
-      <node concept="23pEgU" id="6h4SlfROlTd" role="V2U3X">
-        <node concept="3CXc$R" id="2O9pvn5ZVys" role="3CXc_p">
-          <ref role="3CXc$Q" node="2O9pvn5Yw_6" resolve="ticket bought" />
+      <node concept="23pEgS" id="5uPh8KHPEal" role="V2U3U">
+        <node concept="3ouZFy" id="5uPh8KHPEaW" role="1Upi20" />
+      </node>
+      <node concept="23pEgU" id="5uPh8KHPEan" role="V2U3X">
+        <node concept="3CXc$R" id="5uPh8KHPEb2" role="1UpitV">
+          <ref role="3CXc$Q" node="2O9pvn5Yw_6" resolve="ticket was bought" />
         </node>
       </node>
     </node>
-    <node concept="0GK8g" id="2O9pvn5Ywuf" role="0GYdi">
-      <property role="TrG5h" value="making a reservation" />
-      <node concept="23pEgT" id="2O9pvn5Ywug" role="V2U3S">
-        <ref role="3CXcA4" node="2O9pvn5YwxQ" resolve="make reservation" />
+    <node concept="0GK8g" id="5uPh8KHPEbx" role="0GYdi">
+      <property role="TrG5h" value="making reservations" />
+      <node concept="23pEgT" id="5uPh8KHPEby" role="V2U3S">
+        <ref role="1UpiuT" node="5uPh8KHPd$l" resolve="customer" />
+        <ref role="3CXcA4" node="2O9pvn5YwxQ" resolve="makes reservation" />
       </node>
-      <node concept="23pEgS" id="2O9pvn5Ywuh" role="V2U3U" />
-      <node concept="23pEgU" id="2O9pvn5Ywui" role="V2U3X">
-        <node concept="3CXc$R" id="2O9pvn5ZVyu" role="3CXc_p">
-          <ref role="3CXc$Q" node="2O9pvn5Yw$u" resolve="reservation made" />
+      <node concept="23pEgS" id="5uPh8KHPEbz" role="V2U3U">
+        <node concept="3ouZFy" id="5uPh8KHPEca" role="1Upi20" />
+      </node>
+      <node concept="23pEgU" id="5uPh8KHPEb_" role="V2U3X">
+        <node concept="3CXc$R" id="5uPh8KHPEcg" role="1UpitV">
+          <ref role="3CXc$Q" node="2O9pvn5Yw$u" resolve="reservation was made" />
         </node>
       </node>
     </node>
   </node>
   <node concept="0JyPW" id="4O867Z$TJXr">
     <property role="TrG5h" value="AnotherModel" />
-    <node concept="V2TjJ" id="4O867Z$TOge" role="V2U3y">
-      <property role="TrG5h" value="EntityFoo" />
-    </node>
   </node>
 </model>
 
