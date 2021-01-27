@@ -7,8 +7,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="rlgj" ref="r:dea8bd85-cb8e-407c-ba47-419abc9e7000(dslexample.dddsl.structure)" implicit="true" />
-    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
@@ -597,34 +597,20 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="2O9pvn5ZALW" role="3EZMnx">
-        <ref role="1NtTu8" to="rlgj:26$zi0qFMRo" resolve="when" />
-        <node concept="ljvvj" id="2O9pvn5ZAM6" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+      <node concept="3EZMnI" id="5uPh8KHPHSw" role="3EZMnx">
+        <node concept="VPM3Z" id="5uPh8KHPHSy" role="3F10Kt" />
+        <node concept="3F2HdR" id="5uPh8KHPHSL" role="3EZMnx">
+          <ref role="1NtTu8" to="rlgj:5uPh8KHPHRT" resolve="stateTransitions" />
+          <node concept="l2Vlx" id="5uPh8KHPHSN" role="2czzBx" />
+          <node concept="pj6Ft" id="5uPh8KHPHSQ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="5uPh8KHPHSS" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
         </node>
-        <node concept="lj46D" id="2O9pvn5ZLdr" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <node concept="l2Vlx" id="5uPh8KHPHS_" role="2iSdaV" />
       </node>
-      <node concept="3F1sOY" id="2O9pvn5ZAN5" role="3EZMnx">
-        <ref role="1NtTu8" to="rlgj:26$zi0qFMRq" resolve="given" />
-        <node concept="ljvvj" id="2O9pvn5ZANj" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="2O9pvn5ZLdu" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="2O9pvn5ZAOS" role="3EZMnx">
-        <ref role="1NtTu8" to="rlgj:26$zi0qFMRt" resolve="then" />
-        <node concept="ljvvj" id="2O9pvn5ZAPa" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="lj46D" id="2O9pvn5ZLdx" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="2O9pvn5ZAPv" role="3EZMnx" />
       <node concept="l2Vlx" id="26$zi0qFReM" role="2iSdaV" />
     </node>
   </node>
@@ -1111,6 +1097,41 @@
           <property role="1413C4" value="body-paren" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5uPh8KHPHR2">
+    <property role="3GE5qa" value="process" />
+    <ref role="1XX52x" to="rlgj:5uPh8KHPHQX" resolve="StateTransition" />
+    <node concept="3EZMnI" id="5uPh8KHPHR3" role="2wV5jI">
+      <node concept="3F1sOY" id="5uPh8KHPHR9" role="3EZMnx">
+        <ref role="1NtTu8" to="rlgj:5uPh8KHPHQZ" resolve="when" />
+        <node concept="ljvvj" id="5uPh8KHPHRa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5uPh8KHPHRb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5uPh8KHPHRc" role="3EZMnx">
+        <ref role="1NtTu8" to="rlgj:5uPh8KHPHR0" resolve="given" />
+        <node concept="ljvvj" id="5uPh8KHPHRd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5uPh8KHPHRe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5uPh8KHPHRf" role="3EZMnx">
+        <ref role="1NtTu8" to="rlgj:5uPh8KHPHR1" resolve="then" />
+        <node concept="ljvvj" id="5uPh8KHPHRg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5uPh8KHPHRh" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5uPh8KHPHRi" role="3EZMnx" />
+      <node concept="l2Vlx" id="5uPh8KHPHRj" role="2iSdaV" />
     </node>
   </node>
 </model>

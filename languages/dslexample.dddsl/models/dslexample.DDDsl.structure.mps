@@ -100,32 +100,17 @@
     <property role="TrG5h" value="Process" />
     <property role="EcuMT" value="2799989124795764054" />
     <property role="3GE5qa" value="process" />
-    <property role="R4oN_" value="A process defines which event is output when a command is input, given the state. Conditions given the state are a.k.a. &quot;invariants&quot; of an &quot;aggregate&quot;." />
-    <property role="34LRSv" value="process" />
+    <property role="R4oN_" value="A process defines one or more state transitions: WHEN an Intention is coming in, GIVEN Conditions, THEN Facts are output. Conditions given the state are a.k.a. &quot;invariants&quot; of an &quot;aggregate&quot;." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="26$zi0qFHie" role="PzmwI">
+    <node concept="1TJgyj" id="5uPh8KHPHRT" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939525625" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="stateTransitions" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="5uPh8KHPHQX" resolve="StateTransition" />
+    </node>
+    <node concept="PrWs8" id="5uPh8KHR51j" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="26$zi0qFMRo" role="1TKVEi">
-      <property role="IQ2ns" value="2424217668458327512" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="when" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAP" resolve="When" />
-    </node>
-    <node concept="1TJgyj" id="26$zi0qFMRq" role="1TKVEi">
-      <property role="IQ2ns" value="2424217668458327514" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="given" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAO" resolve="Given" />
-    </node>
-    <node concept="1TJgyj" id="26$zi0qFMRt" role="1TKVEi">
-      <property role="IQ2ns" value="2424217668458327517" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="then" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6v2roN$DcAQ" resolve="Then" />
     </node>
   </node>
   <node concept="1TIwiD" id="6v2roN$DcAF">
@@ -497,6 +482,35 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5uPh8KHO699" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5uPh8KHPHQX">
+    <property role="TrG5h" value="StateTransition" />
+    <property role="EcuMT" value="6320033020939525565" />
+    <property role="3GE5qa" value="process" />
+    <property role="R4oN_" value="A state transition occurs WHEN an Actor sends an Intention (=&quot;Command&quot;), GIVEN conditions (=&quot;invariants&quot;) are met. THEN one or more Facts (=&quot;Events&quot;)  are the result." />
+    <property role="34LRSv" value="process" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5uPh8KHPHQZ" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939525567" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="when" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6v2roN$DcAP" resolve="When" />
+    </node>
+    <node concept="1TJgyj" id="5uPh8KHPHR0" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939525568" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="given" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6v2roN$DcAO" resolve="Given" />
+    </node>
+    <node concept="1TJgyj" id="5uPh8KHPHR1" role="1TKVEi">
+      <property role="IQ2ns" value="6320033020939525569" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="then" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6v2roN$DcAQ" resolve="Then" />
     </node>
   </node>
 </model>
