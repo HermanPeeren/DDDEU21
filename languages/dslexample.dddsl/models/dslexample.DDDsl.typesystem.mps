@@ -69,7 +69,7 @@
   </registry>
   <node concept="1YbPZF" id="shsBZvqCj$">
     <property role="TrG5h" value="typeof_StringLiteral" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.literal" />
     <node concept="3clFbS" id="shsBZvqCj_" role="18ibNy">
       <node concept="1Z5TYs" id="shsBZvqCwq" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvqCwt" role="1ZfhK$">
@@ -95,7 +95,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr5HB">
     <property role="TrG5h" value="typeof_FalseLiteral" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.literal" />
     <node concept="3clFbS" id="shsBZvr5HC" role="18ibNy">
       <node concept="1Z5TYs" id="shsBZvr5Np" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr5NH" role="1ZfhKB">
@@ -121,7 +121,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr5O_">
     <property role="TrG5h" value="typeof_TrueLiteral" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.literal" />
     <node concept="3clFbS" id="shsBZvr5OA" role="18ibNy">
       <node concept="1Z5TYs" id="shsBZvr5OG" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr5OH" role="1ZfhKB">
@@ -147,7 +147,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr5Q4">
     <property role="TrG5h" value="typeof_GreaterThanExpression" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.comparison" />
     <node concept="3clFbS" id="shsBZvr5Q5" role="18ibNy">
       <node concept="1ZobV4" id="shsBZvr5U1" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr5Ui" role="1ZfhK$">
@@ -215,7 +215,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr6mO">
     <property role="TrG5h" value="typeof_LessThanExpression" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.comparison" />
     <node concept="3clFbS" id="shsBZvr6mP" role="18ibNy">
       <node concept="1ZobV4" id="shsBZvr6mV" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr6mW" role="1ZfhK$">
@@ -283,7 +283,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr6xa">
     <property role="TrG5h" value="typeof_ParensExpression" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.general" />
     <node concept="3clFbS" id="shsBZvr6xb" role="18ibNy">
       <node concept="1Z5TYs" id="shsBZvr6AW" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr6Bg" role="1ZfhKB">
@@ -314,7 +314,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr6XD">
     <property role="TrG5h" value="typeof_IntegerLiteral" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.literal" />
     <node concept="3clFbS" id="shsBZvr6XE" role="18ibNy">
       <node concept="1Z5TYs" id="shsBZvr73r" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr73J" role="1ZfhKB">
@@ -340,7 +340,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr74q">
     <property role="TrG5h" value="typeof_PlusExpression" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.arithmetic" />
     <node concept="3clFbS" id="shsBZvr74r" role="18ibNy">
       <node concept="1ZobV4" id="shsBZvr74$" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr74_" role="1ZfhK$">
@@ -408,7 +408,7 @@
   </node>
   <node concept="1YbPZF" id="shsBZvr7bD">
     <property role="TrG5h" value="typeof_SubExpression" />
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.general" />
     <node concept="3clFbS" id="shsBZvr7bE" role="18ibNy">
       <node concept="1ZobV4" id="shsBZvr7bK" role="3cqZAp">
         <node concept="mw_s8" id="shsBZvr7bL" role="1ZfhK$">

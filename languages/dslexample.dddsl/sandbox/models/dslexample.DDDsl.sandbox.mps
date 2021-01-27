@@ -55,6 +55,9 @@
         <child id="509314126403942306" name="right" index="3ot4nt" />
         <child id="509314126403942305" name="left" index="3ot4nu" />
       </concept>
+      <concept id="509314126404058290" name="dslexample.dddsl.structure.ParensExpression" flags="ng" index="3otSVd">
+        <child id="509314126404058291" name="inside" index="3otSVc" />
+      </concept>
       <concept id="509314126404290717" name="dslexample.dddsl.structure.TrueLiteral" flags="ng" index="3ouZFy" />
       <concept id="3245237112760169126" name="dslexample.dddsl.structure.IAttribute" flags="ng" index="3CWDtj">
         <child id="3245237112760169131" name="type" index="3CWDtu" />
@@ -66,9 +69,15 @@
       <concept id="3245237112759908788" name="dslexample.dddsl.structure.DDDProcessType" flags="ng" index="3CZDL1">
         <reference id="3245237112759908789" name="process" index="3CZDL0" />
       </concept>
-      <concept id="7169096315619974295" name="dslexample.dddsl.structure.IntegerLiteral" flags="ng" index="3QqEea">
-        <property id="7169096315619974303" name="value" index="3QqEe2" />
+      <concept id="6320033020940582497" name="dslexample.dddsl.structure.AndExpression" flags="ng" index="1UkVFH" />
+      <concept id="6320033020940174552" name="dslexample.dddsl.structure.Not" flags="ng" index="1Ulo1k">
+        <child id="6320033020940174952" name="inside" index="1Ulob$" />
       </concept>
+      <concept id="6320033020940174445" name="dslexample.dddsl.structure.EntitiyExistsExpression" flags="ng" index="1Ulo3x">
+        <reference id="6320033020940174448" name="entity" index="1Ulo3W" />
+        <child id="6320033020940174446" name="condition" index="1Ulo3y" />
+      </concept>
+      <concept id="6320033020940174442" name="dslexample.dddsl.structure.EqualExpression" flags="ng" index="1Ulo3A" />
       <concept id="6320033020939525565" name="dslexample.dddsl.structure.StateTransition" flags="ng" index="1UoT$L">
         <child id="6320033020939525567" name="when" index="1UoT$N" />
         <child id="6320033020939525568" name="given" index="1UoT_c" />
@@ -123,8 +132,12 @@
         <node concept="2DVlKb" id="2O9pvn5Z9ew" role="3CWDtu" />
       </node>
       <node concept="V2TjO" id="2O9pvn5Z9eo" role="V2TjM">
-        <property role="TrG5h" value="morning-evening" />
+        <property role="TrG5h" value="morning_evening" />
         <node concept="2DVlKb" id="2O9pvn5Z9ez" role="3CWDtu" />
+      </node>
+      <node concept="V2TjO" id="5uPh8KHSccf" role="V2TjM">
+        <property role="TrG5h" value="free_places" />
+        <node concept="39qNDK" id="5uPh8KHSccp" role="3CWDtu" />
       </node>
       <node concept="2mnf_3" id="2O9pvn5Z9dO" role="2mnf_8">
         <property role="TrG5h" value="flightnumber" />
@@ -186,7 +199,7 @@
         <node concept="2DVlKb" id="2O9pvn5Z9cl" role="3CWDtu" />
       </node>
       <node concept="V2TjO" id="2O9pvn5Z9cd" role="V2U2j">
-        <property role="TrG5h" value="morning-evening" />
+        <property role="TrG5h" value="morning_evening" />
         <node concept="2DVlKb" id="2O9pvn5Z9co" role="3CWDtu" />
       </node>
       <node concept="3CZDL1" id="5uPh8KHR6de" role="3CZzU4">
@@ -330,7 +343,19 @@
           <ref role="3CXcA4" node="2O9pvn5YwzP" resolve="acquires balloon" />
         </node>
         <node concept="23pEgS" id="5uPh8KHR4XP" role="1UoT_c">
-          <node concept="3ouZFy" id="5uPh8KHR4YP" role="1Upi20" />
+          <node concept="1Ulo1k" id="5uPh8KHTffi" role="1Upi20">
+            <node concept="1Ulo3x" id="5uPh8KHTffo" role="1Ulob$">
+              <ref role="1Ulo3W" node="2O9pvn5Z9cO" resolve="Balloon" />
+              <node concept="1Ulo3A" id="5uPh8KHUgMD" role="1Ulo3y">
+                <node concept="1UqTt3" id="5uPh8KHUgMS" role="3ot4nt">
+                  <ref role="1UqTts" node="2O9pvn5Z9if" resolve="call-sign" />
+                </node>
+                <node concept="1UqTt3" id="5uPh8KHUgMz" role="3ot4nu">
+                  <ref role="1UqTts" node="2O9pvn5Z9cP" resolve="call-sign" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="23pEgU" id="5uPh8KHR4XR" role="1UoT_d">
           <node concept="3CXc$R" id="5uPh8KHR4YV" role="1UpitV">
@@ -346,19 +371,38 @@
           <ref role="1UpiuT" node="5uPh8KHPd$n" resolve="planner" />
           <ref role="3CXcA4" node="2O9pvn5YwyY" resolve="plans a flight" />
         </node>
-        <node concept="23pEgS" id="5uPh8KHR67W" role="1UoT_c">
-          <node concept="3ot3vY" id="5uPh8KHScbg" role="1Upi20">
-            <node concept="1UqTt3" id="5uPh8KHScbX" role="3ot4nt">
-              <ref role="1UqTts" node="2O9pvn5Z9h3" resolve="capacity" />
-            </node>
-            <node concept="3QqEea" id="5uPh8KHScb9" role="3ot4nu">
-              <property role="3QqEe2" value="0" />
-            </node>
-          </node>
-        </node>
         <node concept="23pEgU" id="5uPh8KHR67Y" role="1UoT_d">
           <node concept="3CXc$R" id="5uPh8KHR68F" role="1UpitV">
             <ref role="3CXc$Q" node="2O9pvn5Yw_E" resolve="flight was planned" />
+          </node>
+        </node>
+        <node concept="23pEgS" id="5uPh8KHUgLP" role="1UoT_c">
+          <node concept="1Ulo1k" id="5uPh8KHUgLQ" role="1Upi20">
+            <node concept="1Ulo3x" id="5uPh8KHUgLR" role="1Ulob$">
+              <ref role="1Ulo3W" node="2O9pvn5Z9cO" resolve="Balloon" />
+              <node concept="1UkVFH" id="5uPh8KHUgLS" role="1Ulo3y">
+                <node concept="3otSVd" id="5uPh8KHUgLT" role="3ot4nu">
+                  <node concept="1Ulo3A" id="5uPh8KHUgLU" role="3otSVc">
+                    <node concept="1UqTt3" id="5uPh8KHUgLV" role="3ot4nt">
+                      <ref role="1UqTts" node="2O9pvn5Z9if" resolve="call-sign" />
+                    </node>
+                    <node concept="1UqTt3" id="5uPh8KHUgLW" role="3ot4nu">
+                      <ref role="1UqTts" node="2O9pvn5Z9cP" resolve="call-sign" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3otSVd" id="5uPh8KHUgLX" role="3ot4nt">
+                  <node concept="1Ulo3A" id="5uPh8KHUgLY" role="3otSVc">
+                    <node concept="1UqTt3" id="5uPh8KHUgLZ" role="3ot4nt">
+                      <ref role="1UqTts" node="2O9pvn5Z9c7" resolve="date" />
+                    </node>
+                    <node concept="1UqTt3" id="5uPh8KHUgM0" role="3ot4nu">
+                      <ref role="1UqTts" node="2O9pvn5Z9ei" resolve="date" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -402,7 +446,14 @@
           <ref role="3CXcA4" node="2O9pvn5YwxQ" resolve="makes reservation" />
         </node>
         <node concept="23pEgS" id="5uPh8KHR6a0" role="1UoT_c">
-          <node concept="3ouZFy" id="5uPh8KHR6aG" role="1Upi20" />
+          <node concept="3ot3vY" id="5uPh8KHScd4" role="1Upi20">
+            <node concept="1UqTt3" id="5uPh8KHSccZ" role="3ot4nu">
+              <ref role="1UqTts" node="5uPh8KHSccf" resolve="free_places" />
+            </node>
+            <node concept="1UqTt3" id="5uPh8KHSce1" role="3ot4nt">
+              <ref role="1UqTts" node="2O9pvn5Z9fo" resolve="number of passengers" />
+            </node>
+          </node>
         </node>
         <node concept="23pEgU" id="5uPh8KHR6a2" role="1UoT_d">
           <node concept="3CXc$R" id="5uPh8KHR6aM" role="1UpitV">

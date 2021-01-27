@@ -190,7 +190,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="6dXJLQl5LMz">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.literal" />
     <ref role="1M2myG" to="rlgj:6dXJLQl5LMn" resolve="IntegerLiteral" />
     <node concept="EnEH3" id="6dXJLQl9D5t" role="1MhHOB">
       <ref role="EomxK" to="rlgj:6dXJLQl5LMv" resolve="value" />

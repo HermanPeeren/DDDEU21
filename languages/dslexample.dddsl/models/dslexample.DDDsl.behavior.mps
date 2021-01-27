@@ -104,7 +104,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="6dXJLQl9_VI">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.literal" />
     <ref role="13h7C2" to="rlgj:6dXJLQl5LMn" resolve="IntegerLiteral" />
     <node concept="13i0hz" id="6dXJLQl9_VT" role="13h7CS">
       <property role="TrG5h" value="isInteger" />
@@ -166,7 +166,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="shsBZvpjul">
-    <property role="3GE5qa" value="expressions" />
+    <property role="3GE5qa" value="expressions.general" />
     <ref role="13h7C2" to="rlgj:shsBZvpjue" resolve="SubExpression" />
     <node concept="13hLZK" id="shsBZvpjum" role="13h7CW">
       <node concept="3clFbS" id="shsBZvpjun" role="2VODD2" />
