@@ -50,6 +50,11 @@
       </concept>
       <concept id="2424217668458322388" name="dslexample.dddsl.structure.Attribute" flags="ng" index="V2TjO" />
       <concept id="4375424548818098945" name="dslexample.dddsl.structure.DDDIntegerType" flags="ng" index="39qNDK" />
+      <concept id="509314126403945857" name="dslexample.dddsl.structure.GreaterThanExpression" flags="ng" index="3ot3vY" />
+      <concept id="509314126403942304" name="dslexample.dddsl.structure.BinaryExpression" flags="ng" index="3ot4nv">
+        <child id="509314126403942306" name="right" index="3ot4nt" />
+        <child id="509314126403942305" name="left" index="3ot4nu" />
+      </concept>
       <concept id="509314126404290717" name="dslexample.dddsl.structure.TrueLiteral" flags="ng" index="3ouZFy" />
       <concept id="3245237112760169126" name="dslexample.dddsl.structure.IAttribute" flags="ng" index="3CWDtj">
         <child id="3245237112760169131" name="type" index="3CWDtu" />
@@ -61,12 +66,18 @@
       <concept id="3245237112759908788" name="dslexample.dddsl.structure.DDDProcessType" flags="ng" index="3CZDL1">
         <reference id="3245237112759908789" name="process" index="3CZDL0" />
       </concept>
+      <concept id="7169096315619974295" name="dslexample.dddsl.structure.IntegerLiteral" flags="ng" index="3QqEea">
+        <property id="7169096315619974303" name="value" index="3QqEe2" />
+      </concept>
       <concept id="6320033020939525565" name="dslexample.dddsl.structure.StateTransition" flags="ng" index="1UoT$L">
         <child id="6320033020939525567" name="when" index="1UoT$N" />
         <child id="6320033020939525568" name="given" index="1UoT_c" />
         <child id="6320033020939525569" name="then" index="1UoT_d" />
       </concept>
       <concept id="6320033020939100742" name="dslexample.dddsl.structure.Actor" flags="ng" index="1Upira" />
+      <concept id="6320033020940047311" name="dslexample.dddsl.structure.AttributeReference" flags="ng" index="1UqTt3">
+        <reference id="6320033020940047312" name="attribuut" index="1UqTts" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -336,7 +347,14 @@
           <ref role="3CXcA4" node="2O9pvn5YwyY" resolve="plans a flight" />
         </node>
         <node concept="23pEgS" id="5uPh8KHR67W" role="1UoT_c">
-          <node concept="3ouZFy" id="5uPh8KHR68_" role="1Upi20" />
+          <node concept="3ot3vY" id="5uPh8KHScbg" role="1Upi20">
+            <node concept="1UqTt3" id="5uPh8KHScbX" role="3ot4nt">
+              <ref role="1UqTts" node="2O9pvn5Z9h3" resolve="capacity" />
+            </node>
+            <node concept="3QqEea" id="5uPh8KHScb9" role="3ot4nu">
+              <property role="3QqEe2" value="0" />
+            </node>
+          </node>
         </node>
         <node concept="23pEgU" id="5uPh8KHR67Y" role="1UoT_d">
           <node concept="3CXc$R" id="5uPh8KHR68F" role="1UpitV">

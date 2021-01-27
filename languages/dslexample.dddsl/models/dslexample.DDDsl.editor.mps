@@ -1134,5 +1134,17 @@
       <node concept="l2Vlx" id="5uPh8KHPHRj" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5uPh8KHRHz4">
+    <ref role="1XX52x" to="rlgj:5uPh8KHRHff" resolve="AttributeReference" />
+    <node concept="1iCGBv" id="5uPh8KHRHz6" role="2wV5jI">
+      <ref role="1NtTu8" to="rlgj:5uPh8KHRHfg" resolve="attribuut" />
+      <node concept="1sVBvm" id="5uPh8KHRHz8" role="1sWHZn">
+        <node concept="3F0A7n" id="5uPh8KHRHzf" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
