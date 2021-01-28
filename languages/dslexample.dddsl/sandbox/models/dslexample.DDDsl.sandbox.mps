@@ -50,7 +50,6 @@
       </concept>
       <concept id="2424217668458322388" name="dslexample.dddsl.structure.Attribute" flags="ng" index="V2TjO" />
       <concept id="4375424548818098945" name="dslexample.dddsl.structure.DDDIntegerType" flags="ng" index="39qNDK" />
-      <concept id="509314126403945857" name="dslexample.dddsl.structure.GreaterThanExpression" flags="ng" index="3ot3vY" />
       <concept id="509314126403942304" name="dslexample.dddsl.structure.BinaryExpression" flags="ng" index="3ot4nv">
         <child id="509314126403942306" name="right" index="3ot4nt" />
         <child id="509314126403942305" name="left" index="3ot4nu" />
@@ -77,6 +76,7 @@
         <reference id="6320033020940174448" name="entity" index="1Ulo3W" />
         <child id="6320033020940174446" name="condition" index="1Ulo3y" />
       </concept>
+      <concept id="6320033020940174441" name="dslexample.dddsl.structure.GreaterThanOrEqualExpression" flags="ng" index="1Ulo3_" />
       <concept id="6320033020940174442" name="dslexample.dddsl.structure.EqualExpression" flags="ng" index="1Ulo3A" />
       <concept id="6320033020939525565" name="dslexample.dddsl.structure.StateTransition" flags="ng" index="1UoT$L">
         <child id="6320033020939525567" name="when" index="1UoT$N" />
@@ -446,7 +446,7 @@
           <ref role="3CXcA4" node="2O9pvn5YwxQ" resolve="makes reservation" />
         </node>
         <node concept="23pEgS" id="5uPh8KHR6a0" role="1UoT_c">
-          <node concept="3ot3vY" id="5uPh8KHScd4" role="1Upi20">
+          <node concept="1Ulo3_" id="5AJZzGe5Ml3" role="1Upi20">
             <node concept="1UqTt3" id="5uPh8KHSccZ" role="3ot4nu">
               <ref role="1UqTts" node="5uPh8KHSccf" resolve="free_places" />
             </node>
