@@ -50,6 +50,10 @@
       </concept>
       <concept id="2424217668458322388" name="dslexample.dddsl.structure.Attribute" flags="ng" index="V2TjO" />
       <concept id="4375424548818098945" name="dslexample.dddsl.structure.DDDIntegerType" flags="ng" index="39qNDK" />
+      <concept id="3431016080360727825" name="dslexample.dddsl.structure.DotExpression" flags="ng" index="1f48Zz">
+        <reference id="3431016080360727901" name="attribute" index="1f48YJ" />
+        <child id="3431016080360727874" name="base" index="1f48YK" />
+      </concept>
       <concept id="509314126403942304" name="dslexample.dddsl.structure.BinaryExpression" flags="ng" index="3ot4nv">
         <child id="509314126403942306" name="right" index="3ot4nt" />
         <child id="509314126403942305" name="left" index="3ot4nu" />
@@ -85,7 +89,7 @@
       </concept>
       <concept id="6320033020939100742" name="dslexample.dddsl.structure.Actor" flags="ng" index="1Upira" />
       <concept id="6320033020940047311" name="dslexample.dddsl.structure.AttributeReference" flags="ng" index="1UqTt3">
-        <reference id="6320033020940047312" name="attribuut" index="1UqTts" />
+        <reference id="6320033020940047312" name="attribute" index="1UqTts" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -347,10 +351,13 @@
             <node concept="1Ulo3x" id="5uPh8KHTffo" role="1Ulob$">
               <ref role="1Ulo3W" node="2O9pvn5Z9cO" resolve="Balloon" />
               <node concept="1Ulo3A" id="5uPh8KHUgMD" role="1Ulo3y">
-                <node concept="1UqTt3" id="5uPh8KHUgMS" role="3ot4nt">
-                  <ref role="1UqTts" node="2O9pvn5Z9if" resolve="call-sign" />
+                <node concept="1f48Zz" id="2YtqJ9w_S2$" role="3ot4nt">
+                  <ref role="1f48YJ" node="2O9pvn5Z9h3" resolve="capacity" />
+                  <node concept="1UqTt3" id="2YtqJ9w$eaa" role="1f48YK">
+                    <ref role="1UqTts" node="2O9pvn5Z9c0" resolve="balloon" />
+                  </node>
                 </node>
-                <node concept="1UqTt3" id="5uPh8KHUgMz" role="3ot4nu">
+                <node concept="1UqTt3" id="2YtqJ9wzoEn" role="3ot4nu">
                   <ref role="1UqTts" node="2O9pvn5Z9cP" resolve="call-sign" />
                 </node>
               </node>
@@ -386,7 +393,7 @@
                     <node concept="1UqTt3" id="5uPh8KHUgLV" role="3ot4nt">
                       <ref role="1UqTts" node="2O9pvn5Z9if" resolve="call-sign" />
                     </node>
-                    <node concept="1UqTt3" id="5uPh8KHUgLW" role="3ot4nu">
+                    <node concept="1UqTt3" id="2YtqJ9wzoE5" role="3ot4nu">
                       <ref role="1UqTts" node="2O9pvn5Z9cP" resolve="call-sign" />
                     </node>
                   </node>

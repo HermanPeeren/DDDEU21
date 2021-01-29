@@ -519,7 +519,7 @@
     <ref role="1TJDcQ" node="6dXJLQl5LLm" resolve="Expression" />
     <node concept="1TJgyj" id="5uPh8KHRHfg" role="1TKVEi">
       <property role="IQ2ns" value="6320033020940047312" />
-      <property role="20kJfa" value="attribuut" />
+      <property role="20kJfa" value="attribute" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="2O9pvn5YZaA" resolve="IAttribute" />
     </node>
@@ -601,6 +601,26 @@
     <property role="TrG5h" value="OrExpression" />
     <property role="34LRSv" value="OR" />
     <ref role="1TJDcQ" node="shsBZvpjuw" resolve="BinaryExpression" />
+  </node>
+  <node concept="1TIwiD" id="2YtqJ9wzukh">
+    <property role="EcuMT" value="3431016080360727825" />
+    <property role="3GE5qa" value="expressions" />
+    <property role="TrG5h" value="DotExpression" />
+    <property role="34LRSv" value="." />
+    <ref role="1TJDcQ" node="6dXJLQl5LLm" resolve="Expression" />
+    <node concept="1TJgyj" id="2YtqJ9wzult" role="1TKVEi">
+      <property role="IQ2ns" value="3431016080360727901" />
+      <property role="20kJfa" value="attribute" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2O9pvn5YZaA" resolve="IAttribute" />
+    </node>
+    <node concept="1TJgyj" id="2YtqJ9wzul2" role="1TKVEi">
+      <property role="IQ2ns" value="3431016080360727874" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="base" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6dXJLQl5LLm" resolve="Expression" />
+    </node>
   </node>
 </model>
 
