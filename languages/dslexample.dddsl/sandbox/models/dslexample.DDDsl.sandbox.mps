@@ -352,7 +352,7 @@
               <ref role="1Ulo3W" node="2O9pvn5Z9cO" resolve="Balloon" />
               <node concept="1Ulo3A" id="5uPh8KHUgMD" role="1Ulo3y">
                 <node concept="1f48Zz" id="2YtqJ9w_S2$" role="3ot4nt">
-                  <ref role="1f48YJ" node="2O9pvn5Z9h3" resolve="capacity" />
+                  <ref role="1f48YJ" node="2O9pvn5Z9cP" resolve="call-sign" />
                   <node concept="1UqTt3" id="2YtqJ9w$eaa" role="1f48YK">
                     <ref role="1UqTts" node="2O9pvn5Z9c0" resolve="balloon" />
                   </node>
