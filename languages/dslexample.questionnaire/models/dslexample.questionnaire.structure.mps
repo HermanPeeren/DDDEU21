@@ -76,11 +76,6 @@
       <property role="TrG5h" value="question_text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="7d5KD5ftAre" role="1TKVEl">
-      <property role="IQ2nx" value="8306259017113953998" />
-      <property role="TrG5h" value="ordering" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="1TJgyi" id="7d5KD5ftArh" role="1TKVEl">
       <property role="IQ2nx" value="8306259017113954001" />
       <property role="TrG5h" value="explanation" />
@@ -92,11 +87,6 @@
       <property role="20kJfa" value="answers" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7d5KD5ftArn" resolve="answer" />
-    </node>
-    <node concept="1TJgyj" id="7d5KD5ftArC" role="1TKVEi">
-      <property role="IQ2ns" value="8306259017113954024" />
-      <property role="20kJfa" value="category" />
-      <ref role="20lvS9" node="7d5KD5ftArz" resolve="category" />
     </node>
     <node concept="PrWs8" id="3mLOxDjz7XL" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
@@ -123,20 +113,6 @@
     <node concept="1TJgyi" id="7d5KD5ftArv" role="1TKVEl">
       <property role="IQ2nx" value="8306259017113954015" />
       <property role="TrG5h" value="explanation" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7d5KD5ftArz">
-    <property role="EcuMT" value="8306259017113954019" />
-    <property role="TrG5h" value="category" />
-    <property role="34LRSv" value="category" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3mLOxDjz7Ym" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
-    </node>
-    <node concept="1TJgyi" id="7d5KD5ftArA" role="1TKVEl">
-      <property role="IQ2nx" value="8306259017113954022" />
-      <property role="TrG5h" value="description" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

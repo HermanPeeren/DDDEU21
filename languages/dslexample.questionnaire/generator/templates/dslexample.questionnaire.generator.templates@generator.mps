@@ -889,18 +889,6 @@
         <node concept="356sEK" id="4cauKK2jtRb" role="383Ya9">
           <node concept="2EixSi" id="4cauKK2jtRe" role="2EinRH" />
         </node>
-        <node concept="356sEK" id="4cauKK2jtRf" role="383Ya9">
-          <node concept="356sEF" id="4cauKK2jtRg" role="356sEH">
-            <property role="TrG5h" value="// todo: give explanations per answer; put values and explanations in a json-file" />
-          </node>
-          <node concept="2EixSi" id="4cauKK2jtRi" role="2EinRH" />
-        </node>
-        <node concept="356sEK" id="4cauKK2jtRj" role="383Ya9">
-          <node concept="356sEF" id="4cauKK2jtRk" role="356sEH">
-            <property role="TrG5h" value="// todo: give explanation per question on hover (or show/hide them all or something like that)" />
-          </node>
-          <node concept="2EixSi" id="4cauKK2jtRm" role="2EinRH" />
-        </node>
         <node concept="356sEK" id="4cauKK2jtRn" role="383Ya9">
           <node concept="356sEF" id="4cauKK2jtRo" role="356sEH">
             <property role="TrG5h" value="// todo: mean score per question; adjust resulting comment based on how many questions are used" />

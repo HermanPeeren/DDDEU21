@@ -19,7 +19,6 @@
       <concept id="8306259017113953993" name="dslexample.questionnaire.structure.question" flags="ng" index="WcUho">
         <property id="8306259017113954001" name="explanation" index="WcUh0" />
         <property id="8306259017113953996" name="question_text" index="WcUht" />
-        <property id="8306259017113953998" name="ordering" index="WcUhv" />
         <child id="8306259017113954005" name="answers" index="WcUh4" />
       </concept>
     </language>
@@ -35,7 +34,6 @@
     <node concept="WcUho" id="2IXLaNxh5JC" role="WcUhm">
       <property role="WcUht" value="Have you already developed software for this domain?" />
       <property role="WcUh0" value="Domain specific languages can offer a more abstract level and are probably less useful for exploring a new domain." />
-      <property role="WcUhv" value="10" />
       <property role="TrG5h" value="software_domain_maturity" />
       <node concept="WcUh6" id="2IXLaNxh5JD" role="WcUh4">
         <property role="WcUhb" value="We are already building software in this domain for years." />
@@ -58,12 +56,11 @@
     </node>
     <node concept="WcUho" id="4pWXKH0OUtG" role="WcUhm">
       <property role="WcUht" value="Do you use Model Driven Engineering?" />
-      <property role="WcUh0" value="DDE = formalising a model and generate software from in." />
-      <property role="WcUhv" value="20" />
+      <property role="WcUh0" value="MDE = formalising a model and generate software from in." />
       <property role="TrG5h" value="dde" />
       <node concept="WcUh6" id="4pWXKH0OUtH" role="WcUh4">
         <property role="WcUhb" value="Yes, we have a formalised model and generate software from that." />
-        <property role="WcUhe" value="If you use DDE then you have a domain specific model. A domain specific modelling language could be a next step." />
+        <property role="WcUhe" value="If you use MDE then you have a domain specific model. A domain specific modelling language could be a next step." />
         <property role="WcUhd" value="3" />
         <property role="TrG5h" value="yes" />
       </node>
@@ -74,28 +71,9 @@
         <property role="WcUhe" value="When coding is not model-driven, then the model will probably not up-to-date when the code is updated. A first step could be to formalise your model." />
       </node>
     </node>
-    <node concept="WcUho" id="3mLOxDjzb_M" role="WcUhm">
-      <property role="WcUht" value="Do you use a domain-specific framework or library to make your software?" />
-      <property role="WcUh0" value="A framework or library that is specially developed for a specific domain contains a lot of domain specific knowledge. But can only be used by developers, not by the domain experts. A DSL can be easily made from it. The framework or library forms the semantics of a language." />
-      <property role="WcUhv" value="5" />
-      <property role="TrG5h" value="framework" />
-      <node concept="WcUh6" id="3mLOxDjzb_N" role="WcUh4">
-        <property role="WcUhb" value="Yes, we code with a (domain specific) framework or library." />
-        <property role="WcUhe" value="A DSL can avoid boilerplate code to use your framework or library." />
-        <property role="WcUhd" value="4" />
-        <property role="TrG5h" value="yes" />
-      </node>
-      <node concept="WcUh6" id="3mLOxDjzb_X" role="WcUh4">
-        <property role="WcUhb" value="No, we code everything from scratch, so we are not restricted by a framework." />
-        <property role="WcUhe" value="Investigate the code you produce for duplication and boilerplate. Maybe you can abstract some of the recurring code efforts." />
-        <property role="WcUhd" value="-5" />
-        <property role="TrG5h" value="no" />
-      </node>
-    </node>
     <node concept="WcUho" id="3mLOxDjzbA0" role="WcUhm">
       <property role="WcUht" value="What is the availability of developers, domain experts and analysts to be involved in a DSL project?" />
       <property role="WcUh0" value="Expertise availability is essential when developing a DSL. When using an existing framework or library the experts in that must also be available." />
-      <property role="WcUhv" value="40" />
       <property role="TrG5h" value="expertise_availability" />
       <node concept="WcUh6" id="3mLOxDjzbA1" role="WcUh4">
         <property role="WcUhb" value="One of the top 3 who built the framework is available." />
@@ -125,7 +103,6 @@
     <node concept="WcUho" id="2w7kKRFhzF6" role="WcUhm">
       <property role="WcUht" value="Do you use use analysts as mediators between experts and developers?" />
       <property role="WcUh0" value="A DSL can support those mediators, so you would need those analysts as the domain experts for your language." />
-      <property role="WcUhv" value="45" />
       <property role="TrG5h" value="mediators" />
       <node concept="WcUh6" id="2w7kKRFhzF7" role="WcUh4">
         <property role="WcUhb" value="Yes, our specialists are the main people who contact the domain experts and make the specifications for the developers." />
@@ -137,7 +114,6 @@
     <node concept="WcUho" id="p61FjUIKY6" role="WcUhm">
       <property role="WcUht" value="Is there active management support available for possible reorganisation or strategic decisions?" />
       <property role="WcUh0" value="Software development in general, and DSL development specifically, can influence the organisation and its goals." />
-      <property role="WcUhv" value="50" />
       <property role="TrG5h" value="management_support" />
       <node concept="WcUh6" id="p61FjUIKY7" role="WcUh4">
         <property role="WcUhb" value="Yes, we are aware this is our core business and will be actively involved." />
@@ -161,7 +137,6 @@
     <node concept="WcUho" id="p61FjUIKYw" role="WcUhm">
       <property role="WcUht" value="Did you experience or do you expect changes, versions or variations of the software for which you want to develop a DSL? Do you  build many similar products, or many variations of the same product?" />
       <property role="WcUh0" value="A DSL is particularly good for abstraction of change." />
-      <property role="WcUhv" value="60" />
       <property role="TrG5h" value="change" />
       <node concept="WcUh6" id="p61FjUIKYx" role="WcUh4">
         <property role="WcUhb" value="Yes, we are continuously developing our products." />
@@ -179,7 +154,6 @@
     <node concept="WcUho" id="2w7kKRFhzrT" role="WcUhm">
       <property role="WcUht" value="Is this your core domain? Do your results in this domain give a fundamental difference? Or is it an ancillary domain which could be improved?" />
       <property role="WcUh0" value="A core domain can benefit from a DSL, for a commodity it'd probably a waste of time." />
-      <property role="WcUhv" value="70" />
       <property role="TrG5h" value="core" />
       <node concept="WcUh6" id="2w7kKRFhzrU" role="WcUh4">
         <property role="WcUhb" value="It is our core business" />
