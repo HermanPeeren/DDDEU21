@@ -15,6 +15,8 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -25,6 +27,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1236262245656" name="jetbrains.mps.lang.editor.structure.MatchingLabelStyleClassItem" flags="ln" index="3mYdg7">
         <property id="1238091709220" name="labelName" index="1413C4" />
@@ -219,6 +222,34 @@
         <property role="3F0ifm" value=";" />
         <node concept="11L4FC" id="UQzrW2W1a$" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3KKNwCUdSaW">
+    <property role="3GE5qa" value="prices" />
+    <ref role="1XX52x" to="7ux2:UQzrW2W1aF" resolve="PriceRule" />
+    <node concept="3EZMnI" id="3KKNwCUdSaY" role="2wV5jI">
+      <node concept="2iRkQZ" id="3KKNwCUdSb1" role="2iSdaV" />
+      <node concept="3EZMnI" id="3KKNwCUdSb8" role="3EZMnx">
+        <node concept="2iRfu4" id="3KKNwCUdSb9" role="2iSdaV" />
+        <node concept="VPM3Z" id="3KKNwCUdSba" role="3F10Kt" />
+        <node concept="3F0ifn" id="3KKNwCUdSbe" role="3EZMnx">
+          <property role="3F0ifm" value="Price rule" />
+        </node>
+        <node concept="3F0A7n" id="3KKNwCUdSbj" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3KKNwCUdSbn" role="3EZMnx" />
+      <node concept="3EZMnI" id="3KKNwCUdSbA" role="3EZMnx">
+        <node concept="2iRfu4" id="3KKNwCUdSbB" role="2iSdaV" />
+        <node concept="3F0ifn" id="3KKNwCUdSbu" role="3EZMnx">
+          <property role="3F0ifm" value="incompatible with:" />
+        </node>
+        <node concept="3F2HdR" id="3KKNwCUdSbX" role="3EZMnx">
+          <ref role="1NtTu8" to="7ux2:3KKNwCUdSaD" resolve="incompatibleProducts" />
+          <node concept="2iRfu4" id="3KKNwCUdSbZ" role="2czzBx" />
         </node>
       </node>
     </node>
