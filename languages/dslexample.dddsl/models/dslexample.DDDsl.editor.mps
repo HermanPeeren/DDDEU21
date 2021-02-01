@@ -153,6 +153,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -167,7 +170,9 @@
       <concept id="5083944728300220902" name="com.mbeddr.mpsutil.grammarcells.structure.SubstituteCell" flags="ng" index="yw3OH">
         <child id="5083944728300220903" name="wrapped" index="yw3OG" />
       </concept>
-      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n">
+        <child id="8207263695491670784" name="priority" index="2EmURo" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -1023,7 +1028,11 @@
     <property role="3GE5qa" value="expressions.general" />
     <ref role="1XX52x" to="rlgj:shsBZvpjuw" resolve="BinaryExpression" />
     <node concept="1WcQYu" id="shsBZvpjuU" role="2wV5jI">
-      <node concept="2ElW$n" id="shsBZvpjuW" role="2El2Yn" />
+      <node concept="2ElW$n" id="shsBZvpjuW" role="2El2Yn">
+        <node concept="3cmrfG" id="3KKNwCUeFWq" role="2EmURo">
+          <property role="3cmrfH" value="800" />
+        </node>
+      </node>
       <node concept="3EZMnI" id="shsBZvpjv6" role="1LiK7o">
         <node concept="1kIj98" id="shsBZvpjvd" role="3EZMnx">
           <node concept="3F1sOY" id="shsBZvpjvm" role="1kIj9b">
@@ -1335,7 +1344,11 @@
     <property role="3GE5qa" value="expressions" />
     <ref role="1XX52x" to="rlgj:2YtqJ9wzukh" resolve="DotExpression" />
     <node concept="1WcQYu" id="2YtqJ9wzukD" role="2wV5jI">
-      <node concept="2ElW$n" id="2YtqJ9wzukF" role="2El2Yn" />
+      <node concept="2ElW$n" id="2YtqJ9wzukF" role="2El2Yn">
+        <node concept="3cmrfG" id="3KKNwCUe1At" role="2EmURo">
+          <property role="3cmrfH" value="30000" />
+        </node>
+      </node>
       <node concept="3EZMnI" id="2YtqJ9wzukP" role="1LiK7o">
         <node concept="1kIj98" id="2YtqJ9wzukW" role="3EZMnx">
           <node concept="3F1sOY" id="2YtqJ9wzul8" role="1kIj9b">
