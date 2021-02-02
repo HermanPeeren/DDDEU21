@@ -13,6 +13,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -21,6 +22,10 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -124,6 +129,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="UQzrW2W1aL" resolve="AgeRule" />
     </node>
+    <node concept="1TJgyj" id="60iO5eaDHaU" role="1TKVEi">
+      <property role="IQ2ns" value="6922824634448925370" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="LastMinutesRules" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="UQzrW2W1b9" resolve="LastMinutesRules" />
+    </node>
     <node concept="1TJgyj" id="UQzrW2W1b4" role="1TKVEi">
       <property role="IQ2ns" value="1060190613819888324" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -131,15 +143,15 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="UQzrW2W1aO" resolve="OccasionRule" />
     </node>
+    <node concept="PrWs8" id="UQzrW2W1aG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
     <node concept="1TJgyj" id="3KKNwCUdSaD" role="1TKVEi">
       <property role="IQ2ns" value="4337192984479498921" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="incompatibleProducts" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3KKNwCUdSaA" resolve="ProductReference" />
-    </node>
-    <node concept="PrWs8" id="UQzrW2W1aG" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="UQzrW2W1aI">
@@ -189,6 +201,11 @@
     <property role="3GE5qa" value="prices" />
     <property role="TrG5h" value="LastMinutesRules" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="60iO5eaDHaS" role="1TKVEl">
+      <property role="IQ2nx" value="6922824634448925368" />
+      <property role="TrG5h" value="NumberOfDaysUntilFlight" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3KKNwCUdSaA">
     <property role="EcuMT" value="4337192984479498918" />

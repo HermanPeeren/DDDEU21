@@ -16,10 +16,10 @@
       <concept id="1060190613819888299" name="dslexample.balloonproduct.structure.PriceRule" flags="ng" index="chDWk" />
     </language>
   </registry>
+  <node concept="chDWk" id="3KKNwCUdSa5" />
   <node concept="chDNI" id="3KKNwCUdSa2">
     <node concept="chDNH" id="3KKNwCUdSa3" role="chDNs" />
     <node concept="chDNC" id="3KKNwCUdSa4" role="chDNq" />
   </node>
-  <node concept="chDWk" id="3KKNwCUdSa5" />
 </model>
 
